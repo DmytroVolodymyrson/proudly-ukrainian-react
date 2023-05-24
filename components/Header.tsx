@@ -1,12 +1,16 @@
 "use client";
 
+import IconMail from "~icons/pu/mail";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import classNames from "classnames";
+import { useTranslation } from "next-i18next";
 import Button from "../components/Button";
+import LocaleSwitcher from "../components/LocaleSwitcher";
 
 export default function Header() {
+  const { t } = useTranslation();
   const [isMenuShown, setIsMenuShown] = React.useState(false);
 
   function handleToggleMobileMenu() {
@@ -39,30 +43,24 @@ export default function Header() {
           <nav className="flex grow flex-col justify-center md:block">
             <ul className="flex flex-col gap-8 text-center font-namu-body text-sm md:flex-row lg:gap-14 lg:text-base">
               <li>
-                <Link href="/help-ukraine">helpUkraine</Link>
+                <Link href="/help-ukraine">{t("helpUkraine")}</Link>
               </li>
               <li>
-                <Link href="/culture">culture</Link>
+                <Link href="/culture">{t("culture")}</Link>
               </li>
               <li>
-                <Link href="/history">history</Link>
+                <Link href="/history">{t("history")}</Link>
               </li>
               <li>
-                <Link href="/contacts">contacts</Link>
+                <Link href="/contacts">{t("contacts")}</Link>
               </li>
             </ul>
           </nav>
           <div className="mt-auto flex items-center gap-4">
             <a href="mailto:proudly.ukrainian.info@gmail.com">
-              {" "}
-              <Image
-                alt="mail icon"
-                src="/images/icons/mail.svg"
-                height="13"
-                width="18"
-              />
+              <IconMail height="13" width="18" />
             </a>
-            {/* <TheLocaleSwitcher /> */}
+            <LocaleSwitcher />
           </div>
         </div>
         <Button

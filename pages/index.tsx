@@ -24,13 +24,6 @@ const Home = () => {
         />
       </section>
       <section className="relative py-[220px]">
-        <Image
-          src="/images/red-square.svg"
-          alt="red-square"
-          className="absolute left-20 top-32"
-          width="757"
-          height="485"
-        />
         <div id="taras-section-bg" className="absolute inset-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,30 +42,19 @@ const Home = () => {
           <Image
             alt="shevchenko"
             className="absolute bottom-0 left-0"
-            src="/images/shevchenko.png"
-            width="357"
-            height="498"
-          />
-
-          <Image
-            fill={true}
-            alt="paper-bg-1"
-            src="/images/paper-bg-1.png"
-            className="absolute inset-0 -z-30 h-full w-full opacity-50"
+            src="/images/taras-group.png"
+            width="501"
+            height="531"
           />
         </div>
         <div className="container">
-          <div className="gap relative z-10 ml-auto flex max-w-[800px] flex-col gap-8 text-right font-namu-title text-3xl">
-            <p>“tarasQuote”</p>
-            <p>tarasName</p>
+          <div className="relative">
+            <div className="gap relative z-10 ml-auto flex max-w-[800px] flex-col gap-8 text-right font-cassandra text-[34px]">
+              <p>“{t("tarasQuote")}”</p>
+              <p>{t("tarasName")}</p>
+            </div>
 
-            <Image
-              src="/images/kolosok.svg"
-              alt="kolosok"
-              className="absolute bottom-2 right-4 -z-10 translate-x-1/2 translate-y-1/2"
-              width="200"
-              height="200"
-            />
+            <span className="absolute -right-[1%] top-1/2 aspect-[139/87] w-[56%] -translate-y-1/2 border border-primary"></span>
           </div>
         </div>
       </section>

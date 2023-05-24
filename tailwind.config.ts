@@ -29,6 +29,7 @@ const config: Config = {
         body: "'Orienta', sans-serif",
         "namu-body": "'NAMU-1960', sans-serif",
         "namu-title": "'NAMU-1910', sans-serif",
+        cassandra: "'Cassandra', sans-serif",
       },
     },
     container: {

@@ -9,6 +9,7 @@ const generalRules = {
 	'max-params': ['error', 6],
 	'react/react-in-jsx-scope': 'off',
 	'unicorn/no-keyword-prefix': 'off',
+	'unicorn/consistent-function-scoping': 'off',
 
 	/**
 	 * Override some Import plugin rules
