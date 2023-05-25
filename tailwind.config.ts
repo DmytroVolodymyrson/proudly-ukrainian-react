@@ -20,6 +20,7 @@ const config: Config = {
         },
         background: {
           DEFAULT: "#F8EACA",
+          dark: "#F4E6C6",
         },
       },
       screens: {

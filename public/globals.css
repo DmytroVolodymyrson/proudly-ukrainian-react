@@ -31,11 +31,15 @@
 
 @layer base {
     html {
-        @apply scroll-smooth font-body text-secondary ;
+        @apply scroll-smooth font-body text-secondary  ;
     }
 
     body{
-        @apply bg-background
+        @apply bg-background  w-screen
+    }
+
+    body > div{
+        @apply overflow-x-hidden
     }
 
     h2 {
