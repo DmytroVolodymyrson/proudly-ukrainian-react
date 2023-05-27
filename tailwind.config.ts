@@ -17,6 +17,7 @@ const config: Config = {
         },
         secondary: {
           DEFAULT: "#070707",
+          light: "#4C4757",
         },
         background: {
           DEFAULT: "#F8EACA",
@@ -25,6 +26,11 @@ const config: Config = {
       },
       screens: {
         xs: "380px",
+      },
+      fontSize: {
+        h1: "220px",
+        h2: "140px",
+        h3: "32px",
       },
       fontFamily: {
         body: "'Orienta', sans-serif",

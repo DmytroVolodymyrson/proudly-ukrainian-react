@@ -43,15 +43,31 @@
     }
 
     h2 {
-        @apply text-3xl;
+        @apply text-5xl sm:text-6xl lg:text-8xl xl:text-h2 font-namu-title;
     }
 
     h3 {
-        @apply md:text-xl lg:text-2xl;
+        @apply text-h3 font-namu-title;
     }
 
     h4 {
-        @apply text-lg;
+        @apply text-lg font-namu-title;
+    }
+}
+
+@layer components {
+    .stroke-text{
+        @apply text-secondary;
+        -webkit-text-fill-color: theme('colors.background.DEFAULT'); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:theme('colors.secondary.DEFAULT') ;
+    }
+    .btn{
+        @apply bg-primary text-base px-6 py-3 text-white font-namu-body flex items-center justify-center w-fit rounded hover:bg-secondary-light transition-all
+    }
+
+    .red-square{
+        @apply border border-primary absolute
     }
 }
 

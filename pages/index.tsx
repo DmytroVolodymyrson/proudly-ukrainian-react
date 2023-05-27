@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -12,9 +13,9 @@ const Home = () => {
           <h1 className="font-namu-title text-7xl text-primary xs:text-8xl md:text-[150px] md:leading-tight lg:text-[220px]">
             {t("ukraine")}
           </h1>
-          <h3 className="font-namu-body text-background">
+          <div className="font-namu-body text-sm text-background xs:text-base md:text-xl lg:text-2xl">
             {t("ukrainianHashtags")}
-          </h3>
+          </div>
         </div>
         <Image
           alt="wheat"
@@ -108,12 +109,42 @@ const Home = () => {
 
         <div className="container px-8 sm:px-16">
           <div className="relative">
-            <div className="gap relative z-10 ml-auto flex max-w-xl flex-col gap-4 text-right font-cassandra text-2xl leading-tight sm:gap-6 sm:text-3xl md:gap-11 lg:max-w-2xl xl:max-w-[800px] xl:text-[34px]">
+            <div className="gap relative z-10 ml-auto flex max-w-xl flex-col gap-4 text-right font-cassandra text-2xl sm:gap-6 sm:text-3xl md:gap-11 lg:max-w-2xl xl:max-w-[800px] xl:text-[34px] xl:leading-tight">
               <p>“{t("tarasQuote")}”</p>
               <p>{t("tarasName")}</p>
             </div>
 
             <span className="absolute -right-6 top-24 aspect-[120/110] max-h-[435px] w-5/6 min-w-[240px] max-w-[695px] -translate-y-1/2 border border-primary sm:top-20 sm:aspect-[139/87] sm:w-3/4 sm:min-w-[290px] md:-right-[10.5%] md:top-[56%] md:w-[60%]"></span>
+          </div>
+        </div>
+      </section>
+      <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
+        <div className="container relative flex items-end gap-32">
+          <div className="flex flex-col gap-8 md:w-3/4 lg:max-w-[700px] lg:gap-10">
+            <h2 className="relative flex w-5/6 flex-col leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
+              <span className="text-primary">{t("history")}</span>
+              <span className="stroke-text relative ml-auto  lg:w-auto xl:-right-48">
+                {t("ofUkraine")}
+              </span>
+
+              <span className="red-square left-44 top-1/2 -z-10 aspect-[833/534] w-[460px] sm:top-20 md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
+            </h2>
+            <div className="flex flex-col gap-8 lg:gap-14">
+              <div className="font-namu-body text-base lg:text-xl lg:leading-8 ">
+                <p>{t("ukraineHistorySectionDescription")}</p>
+              </div>
+              <Link href="/history" className="btn">
+                {t("seeMore")}
+              </Link>
+            </div>
+          </div>
+          <div className="absolute -right-36 bottom-20 top-0 w-40 sm:-right-8 sm:-top-10 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:w-auto 2xl:right-0 2xl:ml-auto">
+            <Image
+              src="/images/fight-and-overcome.jpg"
+              alt="fight-and-overcome"
+              width="428"
+              height="535"
+            />
           </div>
         </div>
       </section>
