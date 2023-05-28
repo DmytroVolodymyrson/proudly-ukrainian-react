@@ -24,7 +24,7 @@ const Home = () => {
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       </section>
-      <section className="relative pb-28 pt-24 sm:py-28 md:py-36 lg:pb-[217px] lg:pt-[237px]">
+      <section className="relative pb-28 pt-24 sm:py-28 md:py-36 lg:pb-[213px] lg:pt-[237px]">
         <div className="absolute inset-0">
           <svg
             width="0"
@@ -75,7 +75,7 @@ const Home = () => {
 
         <div
           id="taras-section-bg-wrapper"
-          className="absolute inset-0 -left-4 top-[17px] w-[101%] sm:-left-10"
+          className="absolute inset-0 -left-4 top-[17px] w-full sm:-left-10"
         >
           <div
             id="taras-section-bg"
@@ -109,28 +109,28 @@ const Home = () => {
 
         <div className="container px-8 sm:px-16">
           <div className="relative">
-            <div className="gap relative z-10 ml-auto flex max-w-xl flex-col gap-4 text-right font-cassandra text-2xl sm:gap-6 sm:text-3xl md:gap-11 lg:max-w-2xl xl:max-w-[800px] xl:text-[34px] xl:leading-tight">
+            <div className="gap relative z-10 ml-auto flex max-w-xl flex-col gap-4 text-right font-cassandra text-2xl sm:gap-6 sm:text-3xl md:gap-12 lg:max-w-2xl xl:max-w-[800px] xl:text-[34px] xl:leading-tight">
               <p>“{t("tarasQuote")}”</p>
               <p>{t("tarasName")}</p>
             </div>
 
-            <span className="absolute -right-6 top-24 aspect-[120/110] max-h-[435px] w-5/6 min-w-[240px] max-w-[695px] -translate-y-1/2 border border-primary sm:top-20 sm:aspect-[139/87] sm:w-3/4 sm:min-w-[290px] md:-right-[10.5%] md:top-[56%] md:w-[60%]"></span>
+            <span className="absolute -right-6 top-24 aspect-[120/110] max-h-[435px] w-5/6 min-w-[240px] max-w-[695px] -translate-y-1/2 border border-primary sm:top-20 sm:aspect-[139/87] sm:w-3/4 sm:min-w-[290px] md:-right-[10.5%] md:top-[61%] md:w-[60%]"></span>
           </div>
         </div>
       </section>
       <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
         <div className="container relative flex items-end gap-32">
-          <div className="flex flex-col gap-8 md:w-3/4 lg:max-w-[700px] lg:gap-10">
+          <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10">
             <h2 className="relative flex w-5/6 flex-col leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
               <span className="text-primary">{t("history")}</span>
-              <span className="stroke-text relative ml-auto  lg:w-auto xl:-right-48">
+              <span className="stroke-text relative ml-auto lg:w-auto xl:-right-48">
                 {t("ofUkraine")}
               </span>
 
               <span className="red-square left-44 top-1/2 -z-10 aspect-[833/534] w-[460px] sm:top-20 md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
             </h2>
             <div className="flex flex-col gap-8 lg:gap-14">
-              <div className="font-namu-body text-base lg:text-xl lg:leading-8 ">
+              <div className="body-text-namu ">
                 <p>{t("ukraineHistorySectionDescription")}</p>
               </div>
               <Link href="/history" className="btn">
@@ -145,6 +145,39 @@ const Home = () => {
               width="428"
               height="535"
             />
+          </div>
+        </div>
+      </section>
+      <section className=" mt-40 sm:mt-48 xl:mt-80">
+        <div className="container relative flex items-start gap-10 lg:gap-16">
+          <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
+            <img
+              src="/images/black-ukraine.png"
+              width="489"
+              height="687"
+              alt="black-ukraine"
+            />
+          </div>
+          <div className="-mt-11 flex shrink flex-col gap-8 lg:gap-14">
+            <div className="relative flex flex-col gap-6 lg:gap-10">
+              <h2 className="stroke-text">{t("culture")}</h2>
+              <div className="body-text-namu">
+                <p>{t("cultureSectionDescription")}</p>
+              </div>
+
+              <div className="red-square -left-[16%] -top-[6%] -z-10 aspect-[901/938] w-[129.64%] xs:-top-[10%] sm:-top-[14%]">
+                <img
+                  src="/images/poppy-flowers.png"
+                  alt="poppy-flowers"
+                  className="h-full w-full object-cover"
+                  width="901"
+                  height="938"
+                />
+              </div>
+            </div>
+            <Link href="/history" className="btn">
+              {t("seeMore")}
+            </Link>
           </div>
         </div>
       </section>

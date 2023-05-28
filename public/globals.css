@@ -43,7 +43,7 @@
     }
 
     h2 {
-        @apply text-5xl sm:text-6xl lg:text-8xl xl:text-h2 font-namu-title;
+        @apply text-5xl sm:text-6xl lg:text-8xl xl:text-h2 font-namu-title xl:leading-tight;
     }
 
     h3 {
@@ -68,6 +68,10 @@
 
     .red-square{
         @apply border border-primary absolute
+    }
+
+    .body-text-namu{
+        @apply font-namu-body text-base lg:text-xl lg:leading-8
     }
 }
 
