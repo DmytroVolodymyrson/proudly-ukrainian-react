@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
+import MoviesTabs from "../components/moviesTabs";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -148,7 +149,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className=" mt-40 sm:mt-48 xl:mt-80">
+      <section className="mt-40 sm:mt-48 xl:mt-80">
         <div className="container relative flex items-start gap-10 lg:gap-16">
           <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
             <img
@@ -179,6 +180,12 @@ const Home = () => {
               {t("seeMore")}
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="mt-80">
+        <div className="container">
+          <h3>Легендарні українські фільми</h3>
+          <MoviesTabs />
         </div>
       </section>
     </>

@@ -112,7 +112,7 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: [
-		'react',
+		'react', 'json-format',
 	],
 	rules: {
 	},

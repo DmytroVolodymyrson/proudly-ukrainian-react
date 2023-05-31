@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d50725-1c18-46fb-bba8-ee7db2f0db40" name="Changes" comment="feat(client): add third section">
-      <change afterPath="$PROJECT_DIR$/public/images/black-ukraine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/poppy-flowers.png" afterDir="false" />
+    <list default="true" id="f7d50725-1c18-46fb-bba8-ee7db2f0db40" name="Changes" comment="feat(client): add culture section">
+      <change afterPath="$PROJECT_DIR$/components/moviesTabs/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/moviesTabs/movies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/movies/shadows-of-ancestors/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/movies/shadows-of-ancestors/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/movies/shadows-of-ancestors/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/movies/shadows-of-ancestors/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/movies/shadows-of-ancestors/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/uk/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/uk/common.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,37 +40,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/public/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/public/images/shadows-of-ancestors",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/shadows-of-ancestors" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/fonts" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/movies" />
+      <recent name="$PROJECT_DIR$/components/moviesTabs" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/public/locales/uk" />
-      <recent name="$PROJECT_DIR$/public/locales/en" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,6 +93,7 @@
       <workItem from="1684958691711" duration="599000" />
       <workItem from="1684959758437" duration="6265000" />
       <workItem from="1685049265714" duration="14636000" />
+      <workItem from="1685456781112" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="feat(client): add i18n plugin">
       <created>1684953295549</created>
@@ -108,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685149795671</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(client): add culture section">
+      <created>1685295315309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685295315309</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +144,8 @@
     <MESSAGE value="feat(client): add i18n plugin" />
     <MESSAGE value="feat(client): added taras shevchenko section" />
     <MESSAGE value="feat(client): add third section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(client): add third section" />
+    <MESSAGE value="feat(client): add culture section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(client): add culture section" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
