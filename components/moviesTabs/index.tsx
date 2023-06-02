@@ -1,18 +1,99 @@
+import { Fragment, useState } from "react";
 import { Tab } from "@headlessui/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Autoplay } from "swiper";
+import "swiper/css";
+import classNames from "classnames";
+import movies from "./movies.json";
 
-export default function MoviesTabs() {
+interface Properties {
+  className: string;
+}
+
+export default function MoviesTabs({ className }: Properties) {
+  const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+  const handleChangeTab = (index: number) => {
+    setSelectedTabIndex(index);
+  };
+
   return (
-    <Tab.Group>
-      <Tab.List>
-        <Tab>Tab 1</Tab>
-        <Tab>Tab 2</Tab>
-        <Tab>Tab 3</Tab>
+    <Tab.Group as="div" className={className}>
+      <Tab.List className="xl:scrollbar-hide flex flex w-full  flex-wrap gap-2.5 overflow-x-auto   ">
+        {movies.map((movie, movieIndex) => {
+          return (
+            <Tab as={Fragment} key={movie.name}>
+              {({ selected }) => {
+                return (
+                  <button
+                    onClick={() => {
+                      handleChangeTab(movieIndex);
+                    }}
+                    className={classNames(
+                      "body-text-namu w-full rounded px-4 py-2 text-background hover:bg-primary sm:w-auto sm:w-fit md:py-3.5 xl:whitespace-nowrap",
+                      selected ? "bg-primary" : "bg-secondary"
+                    )}
+                    style={{ order: movieIndex }}
+                  >
+                    {movie.name}
+                  </button>
+                );
+              }}
+            </Tab>
+          );
+        })}
+
+        <Tab.Panels
+          className="mt-2 w-full sm:!order-last sm:mt-4 lg:mt-14"
+          style={{ order: selectedTabIndex }}
+        >
+          {movies.map((movie) => {
+            return (
+              <Tab.Panel
+                key={movie.name}
+                className="flex w-full flex-col items-start justify-start gap-4 sm:flex-row sm:gap-6 lg:gap-11 "
+              >
+                <div className="w-full max-w-xl sm:w-1/3 md:w-[46.47%]">
+                  <Swiper
+                    modules={[FreeMode, Autoplay]}
+                    autoplay
+                    slidesPerGroup={1}
+                    slidesPerView={2}
+                    spaceBetween={1}
+                    slidesOffsetAfter={0}
+                    mousewheel={true}
+                    freeMode
+                    breakpoints={{
+                      1280: {
+                        slidesPerView: 2.3133,
+                      },
+                      1024: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                      },
+                      768: {
+                        slidesPerView: 1.4,
+                      },
+                      650: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                    }}
+                  >
+                    {movie.images.map((image) => {
+                      return (
+                        <SwiperSlide key={image}>
+                          <img src={image} alt={image} />
+                        </SwiperSlide>
+                      );
+                    })}
+                  </Swiper>
+                </div>
+                <div className="body-text-namu">{movie.description}</div>
+              </Tab.Panel>
+            );
+          })}
+        </Tab.Panels>
       </Tab.List>
-      <Tab.Panels>
-        <Tab.Panel>Content 1</Tab.Panel>
-        <Tab.Panel>Content 2</Tab.Panel>
-        <Tab.Panel>Content 3</Tab.Panel>
-      </Tab.Panels>
     </Tab.Group>
   );
 }

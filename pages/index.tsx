@@ -121,10 +121,10 @@ const Home = () => {
       </section>
       <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
         <div className="container relative flex items-end gap-32">
-          <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10">
+          <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10 2xl:max-w-[950px]">
             <h2 className="relative flex w-5/6 flex-col leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
               <span className="text-primary">{t("history")}</span>
-              <span className="stroke-text relative ml-auto lg:w-auto xl:-right-48">
+              <span className="stroke-text relative ml-auto lg:w-auto xl:-right-48 2xl:right-14">
                 {t("ofUkraine")}
               </span>
 
@@ -139,7 +139,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="absolute -right-36 bottom-20 top-0 w-40 sm:-right-8 sm:-top-10 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:w-auto 2xl:right-0 2xl:ml-auto">
+          <div className="absolute -right-36 bottom-20 top-0 w-40 sm:-right-8 sm:-top-10 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:ml-auto xl:w-auto 2xl:right-0 2xl:ml-0">
             <Image
               src="/images/fight-and-overcome.jpg"
               alt="fight-and-overcome"
@@ -149,7 +149,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-40 sm:mt-48 xl:mt-80">
+      <section className="mt-40 sm:mt-52 md:mt-48 lg:mt-52 xl:mt-80">
         <div className="container relative flex items-start gap-10 lg:gap-16">
           <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
             <img
@@ -159,14 +159,14 @@ const Home = () => {
               alt="black-ukraine"
             />
           </div>
-          <div className="-mt-11 flex shrink flex-col gap-8 lg:gap-14">
-            <div className="relative flex flex-col gap-6 lg:gap-10">
+          <div className="relative -mt-11 flex shrink flex-col gap-8 lg:gap-14">
+            <div className="flex flex-col gap-6 md:relative lg:gap-10">
               <h2 className="stroke-text">{t("culture")}</h2>
               <div className="body-text-namu">
                 <p>{t("cultureSectionDescription")}</p>
               </div>
 
-              <div className="red-square -left-[16%] -top-[6%] -z-10 aspect-[901/938] w-[129.64%] xs:-top-[10%] sm:-top-[14%]">
+              <div className="red-square  -bottom-8 -left-[16%] -top-[6%] -z-10 aspect-[901/938] xs:-bottom-12 xs:-top-[10%] sm:-top-[14%] sm:aspect-[901/760] md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
                 <img
                   src="/images/poppy-flowers.png"
                   alt="poppy-flowers"
@@ -182,10 +182,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-80">
+      <section className="mt-28 sm:mt-32 md:mt-48 lg:mt-72 xl:mt-[340px] 2xl:mt-40">
         <div className="container">
           <h3>Легендарні українські фільми</h3>
-          <MoviesTabs />
+          <MoviesTabs className="mt-6 lg:mt-11" />
         </div>
       </section>
     </>

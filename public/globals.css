@@ -31,11 +31,11 @@
 
 @layer base {
     html {
-        @apply scroll-smooth font-body text-secondary  ;
+        @apply scroll-smooth font-body text-secondary;
     }
 
     body{
-        @apply bg-background
+        @apply bg-background text-secondary;
     }
 
     body > div{
@@ -47,7 +47,7 @@
     }
 
     h3 {
-        @apply text-h3 font-namu-title;
+        @apply text-2xl lg:text-h3 font-namu-title;
     }
 
     h4 {
@@ -72,6 +72,32 @@
 
     .body-text-namu{
         @apply font-namu-body text-base lg:text-xl lg:leading-8
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scroller {
+        scrollbar-color: theme('colors.secondary.light');
+        scrollbar-width: thin;
+    }
+
+    .scroller::-webkit-scrollbar {
+        @apply w-1.5 h-1.5;
+    }
+
+    .scroller::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+
+    .scroller::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-gray-300 hover:bg-gray-400;
     }
 }
 
