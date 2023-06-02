@@ -74,6 +74,10 @@
         @apply font-namu-body text-base lg:text-xl lg:leading-8
     }
 
+    .quote-text{
+        @apply font-cassandra text-2xl sm:text-3xl xl:text-[34px] xl:leading-tight
+    }
+
     .scrollbar-hide::-webkit-scrollbar {
         display: none;
     }
@@ -104,9 +108,16 @@
 
 #taras-section-bg {
     clip-path: url(#svgPath-1);
-    box-shadow: 10px 5px 5px black;
 }
 
 #taras-section-bg-wrapper {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1)) url(#shadow-in) url(#shadow-in);
+}
+
+#simonenko-section-bg {
+    clip-path: url(#svgPath-2);
+}
+
+#simonenko-section-bg-wrapper {
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1)) url(#shadow-in) url(#shadow-in);
 }

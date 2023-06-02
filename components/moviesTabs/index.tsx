@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper";
 import "swiper/css";
 import classNames from "classnames";
+import { useTranslation } from "next-i18next";
 import movies from "./movies.json";
 
 interface Properties {
@@ -11,6 +12,8 @@ interface Properties {
 }
 
 export default function MoviesTabs({ className }: Properties) {
+  const { t } = useTranslation();
+
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
   const handleChangeTab = (index: number) => {
     setSelectedTabIndex(index);
@@ -34,7 +37,7 @@ export default function MoviesTabs({ className }: Properties) {
                     )}
                     style={{ order: movieIndex }}
                   >
-                    {movie.name}
+                    {t(movie.name)}
                   </button>
                 );
               }}
@@ -88,7 +91,7 @@ export default function MoviesTabs({ className }: Properties) {
                     })}
                   </Swiper>
                 </div>
-                <div className="body-text-namu">{movie.description}</div>
+                <div className="body-text-namu">{t(movie.description)}</div>
               </Tab.Panel>
             );
           })}

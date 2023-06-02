@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d50725-1c18-46fb-bba8-ee7db2f0db40" name="Changes" comment="feat(client): add movies data">
+    <list default="true" id="f7d50725-1c18-46fb-bba8-ee7db2f0db40" name="Changes" comment="feat(client): add movies section">
+      <change afterPath="$PROJECT_DIR$/public/images/simonenko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ukraine-map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/moviesTabs/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/moviesTabs/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/moviesTabs/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/moviesTabs/movies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/common.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/uk/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/uk/common.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/public/images/shadows-of-ancestors&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dmytro/PhpstormProjects/prod/proudly-ukrainian/public/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -51,8 +55,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/shadows-of-ancestors" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/shadows-of-ancestors" />
       <recent name="$PROJECT_DIR$/public/fonts" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/pages" />
@@ -87,7 +91,8 @@
       <workItem from="1685049265714" duration="14636000" />
       <workItem from="1685456781112" duration="5704000" />
       <workItem from="1685630394073" duration="598000" />
-      <workItem from="1685647051785" duration="16924000" />
+      <workItem from="1685647051785" duration="19168000" />
+      <workItem from="1685673370016" duration="11316000" />
     </task>
     <task id="LOCAL-00001" summary="feat(client): add i18n plugin">
       <created>1684953295549</created>
@@ -124,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685493772190</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(client): add movies section">
+      <created>1685668488691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685668488691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +160,8 @@
     <MESSAGE value="feat(client): add third section" />
     <MESSAGE value="feat(client): add culture section" />
     <MESSAGE value="feat(client): add movies data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(client): add movies data" />
+    <MESSAGE value="feat(client): add movies section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(client): add movies section" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
