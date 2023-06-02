@@ -5,6 +5,7 @@ import { FreeMode, Autoplay } from "swiper";
 import "swiper/css";
 import classNames from "classnames";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 import movies from "./movies.json";
 
 interface Properties {
@@ -85,7 +86,12 @@ export default function MoviesTabs({ className }: Properties) {
                     {movie.images.map((image) => {
                       return (
                         <SwiperSlide key={image}>
-                          <img src={image} alt={image} />
+                          <Image
+                            src={image}
+                            alt={image}
+                            width="249"
+                            height="249"
+                          />
                         </SwiperSlide>
                       );
                     })}

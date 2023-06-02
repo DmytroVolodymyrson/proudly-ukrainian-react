@@ -3,55 +3,55 @@
     "name": "shadowsOfAncestorsName",
     "description": "shadowsOfAncestorsDescription",
     "images": [
-      "./images/movies/shadows-of-ancestors/1.jpg",
-      "./images/movies/shadows-of-ancestors/2.jpg",
-      "./images/movies/shadows-of-ancestors/3.jpg",
-      "./images/movies/shadows-of-ancestors/4.jpg",
-      "./images/movies/shadows-of-ancestors/5.jpg"
+      "/images/movies/shadows-of-ancestors/1.jpg",
+      "/images/movies/shadows-of-ancestors/2.jpg",
+      "/images/movies/shadows-of-ancestors/3.jpg",
+      "/images/movies/shadows-of-ancestors/4.jpg",
+      "/images/movies/shadows-of-ancestors/5.jpg"
     ]
   },
   {
     "name": "earthMovieName",
     "description": "earthMovieDescription",
     "images": [
-      "./images/movies/earth/1.jpg",
-      "./images/movies/earth/2.jpg",
-      "./images/movies/earth/3.jpg",
-      "./images/movies/earth/4.jpg",
-      "./images/movies/earth/5.jpg"
+      "/images/movies/earth/1.jpg",
+      "/images/movies/earth/2.jpg",
+      "/images/movies/earth/3.jpg",
+      "/images/movies/earth/4.jpg",
+      "/images/movies/earth/5.jpg"
     ]
   },
   {
     "name": "zakharBerkutName",
     "description": "zakharBerkutDescription",
     "images": [
-      "./images/movies/zakhar-berkut/1.jpg",
-      "./images/movies/zakhar-berkut/2.jpg",
-      "./images/movies/zakhar-berkut/3.jpg",
-      "./images/movies/zakhar-berkut/4.jpg",
-      "./images/movies/zakhar-berkut/5.jpg"
+      "/images/movies/zakhar-berkut/1.jpg",
+      "/images/movies/zakhar-berkut/2.jpg",
+      "/images/movies/zakhar-berkut/3.jpg",
+      "/images/movies/zakhar-berkut/4.jpg",
+      "/images/movies/zakhar-berkut/5.jpg"
     ]
   },
   {
     "name": "cyborgsName",
     "description": "cyborgsDescription",
     "images": [
-      "./images/movies/cyborgs/1.jpg",
-      "./images/movies/cyborgs/2.jpg",
-      "./images/movies/cyborgs/3.jpg",
-      "./images/movies/cyborgs/4.jpg",
-      "./images/movies/cyborgs/5.jpg"
+      "/images/movies/cyborgs/1.jpg",
+      "/images/movies/cyborgs/2.jpg",
+      "/images/movies/cyborgs/3.jpg",
+      "/images/movies/cyborgs/4.jpg",
+      "/images/movies/cyborgs/5.jpg"
     ]
   },
   {
     "name": "blackRavenName",
     "description": "blackRavenDescription",
     "images": [
-      "./images/movies/black-raven/1.jpg",
-      "./images/movies/black-raven/2.jpg",
-      "./images/movies/black-raven/3.jpg",
-      "./images/movies/black-raven/4.jpg",
-      "./images/movies/black-raven/5.jpg"
+      "/images/movies/black-raven/1.jpg",
+      "/images/movies/black-raven/2.jpg",
+      "/images/movies/black-raven/3.jpg",
+      "/images/movies/black-raven/4.jpg",
+      "/images/movies/black-raven/5.jpg"
     ]
   }
 ]

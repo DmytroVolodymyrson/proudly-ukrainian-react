@@ -88,15 +88,16 @@ const Home = () => {
             className="absolute inset-0 bg-background-dark"
           >
             <div className="absolute inset-0 -left-12  z-10 2xl:container 2xl:left-0">
-              <img
-                alt="shevchenko"
-                className="absolute bottom-0 w-52 sm:w-64 md:w-96 lg:w-auto"
-                src="/images/taras-group.png"
-                width="594"
-                height="537"
-              />
+              <div className="absolute bottom-0 w-52 sm:w-64 md:w-96 lg:w-auto">
+                <Image
+                  alt="shevchenko"
+                  src="/images/taras-group.png"
+                  width="594"
+                  height="537"
+                />
+              </div>
 
-              <img
+              <Image
                 src="/images/bg-pattern.svg"
                 alt="bg-pattern"
                 className="absolute -right-36 -top-20 h-[601px] w-[150%] max-w-max md:-right-[22rem] lg:-top-5 lg:w-[2200px]"
@@ -104,7 +105,7 @@ const Home = () => {
                 height="601"
               />
             </div>
-            <img
+            <Image
               alt="tree"
               src="/images/tree.png"
               className="absolute -right-24 -top-[22.34%] z-10 w-52 -rotate-[39.15deg] sm:w-64 lg:-right-36 lg:w-auto"
@@ -128,8 +129,18 @@ const Home = () => {
       <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
         <div className="container relative flex items-end gap-32">
           <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10 2xl:max-w-[950px]">
-            <h2 className="relative flex w-5/6 flex-col leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
-              <span className="text-primary">{t("history")}</span>
+            <h2 className="relative flex w-5/6 flex-col items-start leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
+              <div className="relative inline text-primary">
+                {t("history")}
+                <div className="absolute -right-[13%] top-[19%] aspect-square w-[30.61%] -rotate-90">
+                  <Image
+                    src="/images/kolosok.svg"
+                    alt="kolosok"
+                    width="139"
+                    height="138"
+                  />
+                </div>
+              </div>
               <span className="stroke-text relative ml-auto lg:w-auto xl:-right-48 2xl:right-14">
                 {t("ofUkraine")}
               </span>
@@ -158,7 +169,7 @@ const Home = () => {
       <section className="mt-40 sm:mt-52 md:mt-48 lg:mt-52 xl:mt-80">
         <div className="container relative flex items-start gap-10 lg:gap-16">
           <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
-            <img
+            <Image
               src="/images/black-ukraine.png"
               width="489"
               height="687"
@@ -173,7 +184,7 @@ const Home = () => {
               </div>
 
               <div className="red-square  -bottom-8 -left-[16%] -top-[6%] -z-10 aspect-[901/938] xs:-bottom-12 xs:-top-[10%] sm:-top-[14%] sm:aspect-[901/760] md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
-                <img
+                <Image
                   src="/images/poppy-flowers.png"
                   alt="poppy-flowers"
                   className="h-full w-full object-cover"
@@ -220,7 +231,7 @@ const Home = () => {
             className="absolute inset-0 bg-background-dark"
           >
             <div className="absolute inset-0 2xl:container">
-              <img
+              <Image
                 src="/images/bg-pattern.svg"
                 alt="bg-pattern"
                 width="2200"
@@ -228,20 +239,22 @@ const Home = () => {
                 className="absolute -left-[509px] -top-12 max-w-fit md:-top-8 lg:top-8 xl:top-16"
               />
               <div className="absolute -right-10 bottom-2.5 w-[130px] max-w-xs xs:-right-16 xs:w-52 sm:w-auto md:-right-32 md:max-w-sm lg:-right-44 lg:max-w-xl xl:max-w-fit 2xl:right-0">
-                <img
+                <Image
                   alt="simonenko"
                   className="relative z-10"
                   src="/images/simonenko.png"
                   width="690"
                   height="505"
                 />
-                <img
-                  className="absolute -left-[48.69%] -top-[17.42%] w-[116%] max-w-fit"
-                  src="/images/ukraine-map.png"
-                  alt="ukraine-map"
-                  width="801"
-                  height="534"
-                />
+                <div className="absolute -left-[48.69%] -top-[17.42%] w-[116%] max-w-fit">
+                  <Image
+                    src="/images/ukraine-map.png"
+                    alt="ukraine-map"
+                    width="801"
+                    height="534"
+                  />
+                </div>
+
                 <span className="red-square -left-[33.9%] -top-[12.87%] aspect-[757/485] w-[109.7%]"></span>
               </div>
             </div>
@@ -261,6 +274,20 @@ const Home = () => {
                 {t("simonenkoName")}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="mt-40">
+        <div className="container">
+          <div>
+            <span>Виникли питання?</span>
+            <div>Тут ти можеш написати, питання яке тебе турбує.</div>
+            <Image
+              src="/images/flowers.svg"
+              alt="flowers"
+              width="472"
+              height="180"
+            />
           </div>
         </div>
       </section>
