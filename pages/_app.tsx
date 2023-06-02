@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import "../public/globals.css";
 
-const MyApp = ({ Component, pageProps }) => (
+const MyApp = ({ Component, pageProps }: any) => (
   <>
     <Head>
       <link

@@ -46,6 +46,7 @@ const generalRules = {
 				'^@vueuse/integrations/',
 				'^unplugin-icons/',
 				'^unplugin-vue-components/',
+				'swiper/',
 				'^~',
 			],
 		},
@@ -83,6 +84,7 @@ module.exports = {
 	},
 	extends: [
 		'plugin:react/recommended',
+		'plugin:@next/next/recommended',
 		'xo',
 	],
 	overrides: [
