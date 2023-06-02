@@ -12,7 +12,7 @@ module.exports = {
 				jsx: 'react',
 				customCollections: {
 					// eslint-disable-next-line new-cap
-					pu: FileSystemIconLoader('public/images/icons', svg => svg.replace(/^<svg /, '<svg fill="currentColor" ')),
+					pu: FileSystemIconLoader('./assets/icons', svg => svg.replace(/^<svg /, '<svg fill="currentColor" ')),
 				},
 			}),
 		);

@@ -1,6 +1,6 @@
 "use client";
 
-import IconMail from "~icons/pu/mail.jsx";
+import IconMail from "~icons/pu/mail";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
