@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
+import Head from "next/head";
 import MoviesTabs from "../components/moviesTabs";
 
 const Home = () => {
@@ -9,6 +10,10 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Proudly Ukrainian</title>
+      </Head>
+
       <section className="relative flex h-screen">
         <div className="container m-auto flex flex-col items-center gap-5">
           <h1 className="font-namu-title text-7xl text-primary xs:text-8xl md:text-[150px] md:leading-tight lg:text-[220px]">
