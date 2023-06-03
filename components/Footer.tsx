@@ -1,6 +1,3 @@
-import IconFacebook from "~icons/pu/facebook";
-import IconTelegram from "~icons/pu/telegram";
-import IconInstagram from "~icons/pu/instagram";
 import Image from "next/image";
 import React from "react";
 import { useTranslation } from "next-i18next";
