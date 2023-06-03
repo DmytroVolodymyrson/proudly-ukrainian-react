@@ -9,7 +9,7 @@ interface Properties {
   loadingWrapperClass?: string;
   className: string;
   type?: "button" | "submit" | "reset" | undefined;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function Button({

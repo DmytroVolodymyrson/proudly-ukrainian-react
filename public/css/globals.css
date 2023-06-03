@@ -5,26 +5,26 @@
 
 @font-face {
     font-family: 'NAMU-1910';
-    src: url('./fonts/NAMU-1910.otf') format('opentype');
+    src: url('../fonts/NAMU-1910.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NAMU-1960';
-    src: url('./fonts/NAMU-1960.otf') format('opentype');
+    src: url('../fonts/NAMU-1960.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Orienta';
-    src: url('./fonts/Orienta-Regular.ttf') format('truetype');
+    src: url('../fonts/Orienta-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Cassandra';
-    src: url('./fonts/Cassandra.ttf') format('truetype');
+    src: url('../fonts/Cassandra.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -102,6 +102,13 @@
 
     .scroller::-webkit-scrollbar-thumb {
         @apply rounded-full bg-gray-300 hover:bg-gray-400;
+    }
+
+    .input{
+        @apply border rounded border-secondary text-base bg-transparent px-5 py-2.5;
+    }
+    .input::placeholder{
+        @apply text-secondary opacity-30;
     }
 }
 

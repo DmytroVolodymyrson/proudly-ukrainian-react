@@ -1,9 +1,11 @@
+import IconMail from "~icons/pu/mail";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
 import MoviesTabs from "../components/moviesTabs";
+import ContactForm from "../components/contactForm";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -277,17 +279,33 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-40">
-        <div className="container">
-          <div>
-            <span>Виникли питання?</span>
-            <div>Тут ти можеш написати, питання яке тебе турбує.</div>
-            <Image
-              src="/images/flowers.svg"
-              alt="flowers"
-              width="472"
-              height="180"
-            />
+      <section className="mt-16 sm:mt-20 md:mt-28 lg:mt-36">
+        <div className="container flex flex-col justify-between gap-10 sm:flex-row">
+          <div className="font-namu-body">
+            <span className="text-base opacity-50">{t("haveQuestions")}</span>
+            <div className="mt-1 max-w-sm text-xl md:text-2xl">
+              {t("youCanWriteUs")}
+            </div>
+            <div className="mt-5 max-w-xs lg:max-w-fit">
+              <Image
+                src="/images/flowers.svg"
+                alt="flowers"
+                width="472"
+                height="180"
+              />
+            </div>
+            <a
+              href="mailto:proudly.ukrainian.info@gmail.com"
+              className="mt-5 flex items-center gap-3 transition-colors hover:text-primary"
+            >
+              <IconMail width="24" height="24" />
+              <span className="text-sm xs:text-base">
+                proudly.ukrainian.info@gmail.com
+              </span>
+            </a>
+          </div>
+          <div className="md:w-[44%] ">
+            <ContactForm />
           </div>
         </div>
       </section>
