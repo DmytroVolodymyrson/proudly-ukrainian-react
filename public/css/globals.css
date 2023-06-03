@@ -110,6 +110,10 @@
     .input::placeholder{
         @apply text-secondary opacity-30;
     }
+
+    .link-animate{
+        @apply hover:text-primary transition-colors
+    }
 }
 
 

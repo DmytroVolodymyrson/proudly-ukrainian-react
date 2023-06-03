@@ -195,7 +195,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <Link href="/history" className="btn">
+            <Link href="/culture" className="btn">
               {t("seeMore")}
             </Link>
           </div>

@@ -22,16 +22,24 @@ export default function Footer() {
           <nav className="w-full">
             <ul className=" flex flex-col justify-between gap-5 text-center sm:flex-row sm:text-left">
               <li>
-                <Link href="/help-ukraine">{t("helpUkraine")}</Link>
+                <Link href="/help-ukraine" className="link-animate">
+                  {t("helpUkraine")}
+                </Link>
               </li>
               <li>
-                <Link href="/culture">{t("culture")}</Link>
+                <Link href="/culture" className="link-animate">
+                  {t("culture")}
+                </Link>
               </li>
               <li>
-                <Link href="/history">{t("history")}</Link>
+                <Link href="/history" className="link-animate">
+                  {t("history")}
+                </Link>
               </li>
               <li>
-                <Link href="/contacts">{t("contacts")}</Link>
+                <Link href="/contacts" className="link-animate">
+                  {t("contacts")}
+                </Link>
               </li>
             </ul>
           </nav>

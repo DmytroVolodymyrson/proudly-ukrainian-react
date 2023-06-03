@@ -43,16 +43,24 @@ export default function Header() {
           <nav className="flex grow flex-col justify-center md:block">
             <ul className="flex flex-col gap-8 text-center font-namu-body text-sm md:flex-row lg:gap-14 lg:text-base">
               <li>
-                <Link href="/help-ukraine">{t("helpUkraine")}</Link>
+                <Link href="/help-ukraine" className="link-animate">
+                  {t("helpUkraine")}
+                </Link>
               </li>
               <li>
-                <Link href="/culture">{t("culture")}</Link>
+                <Link href="/culture" className="link-animate">
+                  {t("culture")}
+                </Link>
               </li>
               <li>
-                <Link href="/history">{t("history")}</Link>
+                <Link href="/history" className="link-animate">
+                  {t("history")}
+                </Link>
               </li>
               <li>
-                <Link href="/contacts">{t("contacts")}</Link>
+                <Link href="/contacts" className="link-animate">
+                  {t("contacts")}
+                </Link>
               </li>
             </ul>
           </nav>
