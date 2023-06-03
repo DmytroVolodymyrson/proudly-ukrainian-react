@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "./Header";
 
 export default function RootLayout({
@@ -10,6 +11,7 @@ export default function RootLayout({
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

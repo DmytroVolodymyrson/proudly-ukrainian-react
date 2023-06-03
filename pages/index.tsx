@@ -1,4 +1,3 @@
-import IconMail from "~icons/pu/mail";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -6,6 +5,7 @@ import Link from "next/link";
 import Head from "next/head";
 import MoviesTabs from "../components/moviesTabs";
 import ContactForm from "../components/contactForm";
+import ContactEmail from "../components/contactEmail";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -294,15 +294,7 @@ const Home = () => {
                 height="180"
               />
             </div>
-            <a
-              href="mailto:proudly.ukrainian.info@gmail.com"
-              className="mt-5 flex items-center gap-3 transition-colors hover:text-primary"
-            >
-              <IconMail width="24" height="24" />
-              <span className="text-sm xs:text-base">
-                proudly.ukrainian.info@gmail.com
-              </span>
-            </a>
+            <ContactEmail className="mt-5" />
           </div>
           <div className="md:w-[44%] ">
             <ContactForm />
