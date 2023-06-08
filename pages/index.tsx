@@ -14,6 +14,10 @@ const Home = () => {
     <>
       <Head>
         <title>Proudly Ukrainian</title>
+        <meta
+          name="description"
+          content="Discover Ukraine’s rich history and diverse culture."
+        />
       </Head>
 
       <section className="relative flex h-screen">
@@ -131,7 +135,7 @@ const Home = () => {
       <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
         <div className="container relative flex items-end gap-32">
           <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10 2xl:max-w-[950px]">
-            <h2 className="relative flex w-5/6 flex-col items-start leading-tight sm:w-3/4  md:w-4/5 lg:w-auto">
+            <h2 className="relative flex w-5/6 flex-col items-start  leading-tight  sm:w-3/4 md:w-4/5 lg:w-auto">
               <div className="relative inline text-primary">
                 {t("history")}
                 <div className="absolute -right-[13%] top-[19%] aspect-square w-[30.61%] -rotate-90">
@@ -153,7 +157,7 @@ const Home = () => {
               <div className="body-text-namu ">
                 <p>{t("ukraineHistorySectionDescription")}</p>
               </div>
-              <Link href="/history" className="btn">
+              <Link href="/ukrainian-history" className="btn">
                 {t("seeMore")}
               </Link>
             </div>
@@ -195,7 +199,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <Link href="/culture" className="btn">
+            <Link href="/ukrainian-culture" className="btn">
               {t("seeMore")}
             </Link>
           </div>

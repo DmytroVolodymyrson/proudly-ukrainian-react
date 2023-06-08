@@ -9,21 +9,32 @@ import { useTranslation } from "next-i18next";
 import Button from "../components/Button";
 import LocaleSwitcher from "../components/LocaleSwitcher";
 
-export default function Header() {
+interface Properties {
+  isWhite?: boolean;
+  positionAbsolute?: boolean;
+}
+
+export default function Header({ isWhite, positionAbsolute }: Properties) {
   const { t } = useTranslation();
   const [isMenuShown, setIsMenuShown] = React.useState(false);
+
+  const logoPath = `/images/logo${isWhite ? "" : "-dark"}.svg`;
 
   function handleToggleMobileMenu() {
     setIsMenuShown(!isMenuShown);
   }
 
   return (
-    <header className="absolute left-0 top-0 z-50 w-full py-3">
+    <header
+      className={classNames(" w-full py-3", {
+        "absolute left-0 top-0 z-50": positionAbsolute,
+      })}
+    >
       <div className="container flex items-end justify-between gap-4">
         <div className="flex grow">
           <Link href="/" className="max-w-28 mr-auto flex md:w-16 lg:w-auto">
             <Image
-              src="/images/logo.svg"
+              src={logoPath}
               alt="logo"
               height="62"
               width="103"
@@ -33,10 +44,11 @@ export default function Header() {
         </div>
         <div
           className={classNames(
-            "fixed top-0 flex h-screen w-full grow flex-col items-center gap-4 overflow-auto bg-background p-4 text-secondary transition-all duration-300 md:static md:h-auto md:w-auto md:flex-row md:items-end md:justify-between md:bg-transparent md:p-0 md:text-background",
+            "fixed top-0 flex h-screen w-full grow flex-col items-center gap-4 overflow-auto bg-background p-4 text-secondary  transition-all duration-300 md:static md:h-auto md:w-auto md:flex-row md:items-end md:justify-between md:bg-transparent md:p-0 ",
             {
               "left-0": isMenuShown,
               "left-full": !isMenuShown,
+              "md:text-background": isWhite,
             }
           )}
         >
@@ -48,12 +60,12 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/culture" className="link-animate">
+                <Link href="/ukrainian-culture" className="link-animate">
                   {t("culture")}
                 </Link>
               </li>
               <li>
-                <Link href="/history" className="link-animate">
+                <Link href="/ukrainian-history" className="link-animate">
                   {t("history")}
                 </Link>
               </li>

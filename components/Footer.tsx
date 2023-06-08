@@ -24,12 +24,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/culture" className="link-animate">
+                <Link href="/ukrainian-culture" className="link-animate">
                   {t("culture")}
                 </Link>
               </li>
               <li>
-                <Link href="/history" className="link-animate">
+                <Link href="/ukrainian-history" className="link-animate">
                   {t("history")}
                 </Link>
               </li>
