@@ -30,9 +30,11 @@ const Home = () => {
           </div>
         </div>
         <Image
+          priority={true}
           alt="wheat"
           fill={true}
           src="/images/wheat.jpg"
+          sizes="(max-width: 768px) 10vw, (max-width: 1200px) 50vw, 33vw"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       </section>

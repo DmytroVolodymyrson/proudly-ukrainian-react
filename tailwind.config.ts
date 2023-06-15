@@ -23,6 +23,7 @@ const config: Config = {
         background: {
           DEFAULT: "#F8EACA",
           dark: "#F4E6C6",
+          light: "#FFF5DE",
         },
       },
       screens: {
@@ -32,6 +33,7 @@ const config: Config = {
         h1: "220px",
         h2: "140px",
         h3: "32px",
+        h4: "28px",
       },
       fontFamily: {
         body: "'Orienta', sans-serif",

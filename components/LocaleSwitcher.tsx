@@ -23,7 +23,7 @@ export default function LocaleSwitcher() {
             <Field
               as="select"
               name="locale"
-              className="bg-transparent outline-0"
+              className="cursor-pointer bg-transparent outline-0"
             >
               {localeOptions.map((localeOption) => (
                 <option

@@ -26,8 +26,9 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
 
   return (
     <header
-      className={classNames(" w-full py-3", {
+      className={classNames(" z-50 w-full py-3", {
         "absolute left-0 top-0 z-50": positionAbsolute,
+        relative: !positionAbsolute,
       })}
     >
       <div className="container flex items-end justify-between gap-4">

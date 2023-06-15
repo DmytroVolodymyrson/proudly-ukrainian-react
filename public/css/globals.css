@@ -35,11 +35,11 @@
     }
 
     body{
-        @apply bg-background text-secondary;
+        @apply bg-background text-secondary min-h-screen flex ;
     }
 
     body > div{
-        @apply w-full overflow-hidden
+        @apply w-full overflow-hidden flex flex-col
     }
 
     h2 {
@@ -51,7 +51,7 @@
     }
 
     h4 {
-        @apply text-lg font-namu-title;
+        @apply text-2xl lg:text-h4 font-namu-title;
     }
 }
 
@@ -72,6 +72,9 @@
 
     .body-text-namu{
         @apply font-namu-body text-base lg:text-xl lg:leading-8
+    }
+    .body-text{
+        @apply text-base lg:text-xl
     }
 
     .quote-text{
