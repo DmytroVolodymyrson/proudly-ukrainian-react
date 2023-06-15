@@ -43,7 +43,7 @@
     }
 
     h2 {
-        @apply text-5xl sm:text-6xl lg:text-8xl xl:text-h2 font-namu-title xl:leading-tight;
+        @apply main-title;
     }
 
     h3 {
@@ -56,6 +56,11 @@
 }
 
 @layer components {
+
+    .main-title{
+        @apply text-5xl sm:text-6xl lg:text-8xl xl:text-h2 font-namu-title xl:leading-tight text-primary;
+    }
+
     .stroke-text{
         @apply text-secondary;
         -webkit-text-fill-color: theme('colors.background.DEFAULT'); /* Will override color (regardless of order) */

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-import HelpOrganizations from "../components/helpOrganizations";
+import HelpOrganizations from "../components/HelpOrganizations";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -13,13 +13,13 @@ const Home = () => {
         <title>Help Ukraine</title>
         <meta
           name="description"
-          content="This is an example page with a meta description."
+          content="Explore organizations helping Ukraine, support military personnel and civilians affected by the conflict. Make a difference today."
         />
       </Head>
 
       <section className="pt-32 sm:pt-40 lg:pt-56 xl:pt-64">
         <div className="container">
-          <h2 className="relative leading-snug text-primary max-xs:text-4xl sm:pl-5">
+          <h2 className="relative leading-snug max-xs:text-4xl sm:pl-5">
             <span>
               <span className="relative text-background ">
                 <span className="relative z-10">{t("organizations")}</span>

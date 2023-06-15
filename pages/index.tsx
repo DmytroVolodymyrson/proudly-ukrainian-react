@@ -3,9 +3,9 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
-import MoviesTabs from "../components/moviesTabs";
-import ContactForm from "../components/contactForm";
-import ContactEmail from "../components/contactEmail";
+import MoviesTabs from "../components/MoviesTabs";
+import ContactForm from "../components/ContactForm";
+import ContactEmail from "../components/ContactEmail";
 
 const Home = () => {
   const { t } = useTranslation();
