@@ -10,7 +10,7 @@ interface Properties {
 }
 
 export default function HelpOrganizations({ className }: Properties) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("organizations");
 
   return (
     <div className={classNames("relative", className)}>

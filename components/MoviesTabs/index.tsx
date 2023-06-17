@@ -13,7 +13,7 @@ interface Properties {
 }
 
 export default function MoviesTabs({ className }: Properties) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("movies");
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
   const handleChangeTab = (index: number) => {

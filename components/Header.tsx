@@ -26,8 +26,8 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
 
   return (
     <header
-      className={classNames(" z-50 w-full py-3", {
-        "absolute left-0 top-0 z-50": positionAbsolute,
+      className={classNames("z-50 w-full py-3", {
+        "absolute left-0 top-0": positionAbsolute,
         relative: !positionAbsolute,
       })}
     >

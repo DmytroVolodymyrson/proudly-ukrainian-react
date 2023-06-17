@@ -1,0 +1,32 @@
+[
+  {
+    "title": "nationalWearTitle",
+    "description": "nationalWearDescription",
+    "image": "national-wear.jpg"
+  },
+  {
+    "title": "nationalMusicTitle",
+    "description": "nationalMusicDescription",
+    "image": "national-music.jpg"
+  },
+  {
+    "title": "paintingTitle",
+    "description": "paintingDescription",
+    "image": "pictures.jpg"
+  },
+  {
+    "title": "ukrainianCuisineTitle",
+    "description": "ukrainianCuisineDescription",
+    "image": "ukrainian-cuisine.jpg"
+  },
+  {
+    "title": "traditionalPoemsTitle",
+    "description": "traditionalPoemsDescription",
+    "image": "traditional-poems.jpg"
+  },
+  {
+    "title": "traditionsTitle",
+    "description": "traditionsDescription",
+    "image": "traditions.jpg"
+  }
+]

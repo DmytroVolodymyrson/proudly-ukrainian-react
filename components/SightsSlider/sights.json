@@ -1,0 +1,37 @@
+[
+  {
+    "name": "kamyanyetsPodilskyName",
+    "description": "kamyanyetsPodilskyDescription",
+    "image": "kamyanyets-podilsky.jpg"
+  },
+  {
+    "name": "lvivName",
+    "description": "lvivDescription",
+    "image": "lviv.jpg"
+  },
+  {
+    "name": "kyivName",
+    "description": "kyivDescription",
+    "image": "kyiv.jpg"
+  },
+  {
+    "name": "chornobylName",
+    "description": "chornobylDescription",
+    "image": "chornobyl.jpg"
+  },
+  {
+    "name": "odessaName",
+    "description": "odessaDescription",
+    "image": "odessa.jpg"
+  },
+  {
+    "name": "krymName",
+    "description": "krymDescription",
+    "image": "krym.jpg"
+  },
+  {
+    "name": "karpatyName",
+    "description": "karpatyDescription",
+    "image": "karpaty.jpg"
+  }
+]

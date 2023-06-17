@@ -314,7 +314,7 @@ const Home = () => {
 export async function getServerSideProps({ locale }: { locale: string }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ["common", "movies"])),
     },
   };
 }
