@@ -2,13 +2,13 @@ import IconArrowLeft from "~icons/pu/arrow-left";
 import IconArrowRight from "~icons/pu/arrow-right";
 
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
 import { Navigation, EffectFade } from "swiper";
 import sights from "./sights.json";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { useTranslation } from "next-i18next";
 
 export default function SightsSlider() {
   const { t } = useTranslation("sights");
