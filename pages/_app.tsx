@@ -36,6 +36,7 @@ const MyApp = ({ Component, pageProps }: any) => (
         content="/images/favicons/browserconfig.xml"
       />
       <meta name="theme-color" content="#ffffff" />
+      <link rel="preload" href="../public/fonts/NAMU-1910.woff2" as="font" type="font/woff2" crossOrigin={'anonymous'} />
     </Head>
     <Layout>
       <Component {...pageProps} />
