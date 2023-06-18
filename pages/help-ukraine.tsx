@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import HelpOrganizations from "../components/HelpOrganizations";
 
-const Home = () => {
+const HelpUkraine = () => {
   const { t } = useTranslation();
 
   return (
@@ -79,4 +79,4 @@ export async function getServerSideProps({ locale }: { locale: string }) {
   };
 }
 
-export default Home;
+export default HelpUkraine;

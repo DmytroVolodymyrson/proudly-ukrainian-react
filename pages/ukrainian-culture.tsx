@@ -5,7 +5,7 @@ import Head from "next/head";
 import SightsSlider from "../components/SightsSlider";
 import CultureGrid from "../components/CultureGrid";
 
-const Home = () => {
+const UkrainianCulture = () => {
   const { t } = useTranslation();
 
   return (
@@ -72,4 +72,4 @@ export async function getServerSideProps({ locale }: { locale: string }) {
   };
 }
 
-export default Home;
+export default UkrainianCulture;
