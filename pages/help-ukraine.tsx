@@ -26,7 +26,7 @@ const HelpUkraine = () => {
                 <span className="absolute -inset-x-1.5 -bottom-1 -top-20 bg-secondary-darker xs:-inset-x-3 xs:-bottom-3 sm:-bottom-4 lg:-inset-x-4 lg:-top-32 xl:-inset-x-6 xl:-bottom-8  xl:-top-40">
                   <span className="absolute bottom-0 left-0 w-[43.61%] opacity-30">
                     <Image
-                      src="/images/flowers-2.png"
+                      src="/images/flowers-2.webp"
                       alt="flowers"
                       width="345"
                       height="328"
@@ -45,7 +45,7 @@ const HelpUkraine = () => {
             <span className="absolute -bottom-4 right-0 -z-10 w-2/5 rotate-[-47.23deg] sm:-right-12 sm:-top-40 sm:bottom-0 sm:w-[34.45%] lg:-right-36 lg:-top-52">
               <Image
                 alt="flowers"
-                src="/images/flowers-3.png"
+                src="/images/flowers-3.webp"
                 width="430"
                 height="542"
               />

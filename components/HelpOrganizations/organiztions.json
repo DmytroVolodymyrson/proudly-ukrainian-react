@@ -2,37 +2,37 @@
   {
     "name": "comeBackAliveFundName",
     "link": "https://savelife.in.ua/",
-    "image": "come-back-alive.jpg",
+    "image": "come-back-alive.webp",
     "description": "comeBackAliveFundDescription"
   },
   {
     "name": "united24FundName",
     "link": "https://u24.gov.ua/uk",
-    "image": "united24.jpg",
+    "image": "united24.webp",
     "description": "united24FundDescription"
   },
   {
     "name": "sergiyPritulaFundName",
     "link": "https://prytulafoundation.org/",
-    "image": "sergiy-pritula.jpg",
+    "image": "sergiy-pritula.webp",
     "description": "sergiyPritulaFundDescription"
   },
   {
     "name": "razomForUkraineFundName",
     "link": "https://www.razomforukraine.org/",
-    "image": "razom.jpg",
+    "image": "razom.webp",
     "description": "razomForUkraineFundDescription"
   },
   {
     "name": "ukrainianCatholicUniversityFundName",
     "link": "https://warinua.ucu.edu.ua/",
-    "image": "catholic-university.png",
+    "image": "catholic-university.webp",
     "description": "ukrainianCatholicUniversityFundDescription"
   },
   {
     "name": "koloFundName",
     "link": "https://koloua.com/",
-    "image": "kolo.jpg",
+    "image": "kolo.webp",
     "description": "koloFundDescription"
   }
 ]

@@ -54,7 +54,7 @@ export default function MoviesTabs({ className }: Properties) {
             return (
               <Tab.Panel
                 key={movie.name}
-                className="flex w-full flex-col items-start justify-start gap-4 sm:flex-row sm:gap-6 lg:gap-11 "
+                className="flex min-h-[203px] w-full flex-col items-start justify-start gap-4 sm:flex-row sm:gap-6 md:min-h-[244px] lg:min-h-[230px] lg:gap-11 xl:min-h-[248px] "
               >
                 <div className="w-full max-w-xl sm:w-1/3 md:w-[46.47%]">
                   <Swiper

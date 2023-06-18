@@ -28,7 +28,7 @@ const UkrainianCulture = () => {
           <div className="absolute -right-36 bottom-0 hidden sm:right-0 sm:block">
             <div className="w-40 sm:w-52 lg:w-80 xl:w-fit">
               <Image
-                src="/images/ukrainian-woman.png"
+                src="/images/ukrainian-woman.webp"
                 alt="ukrainian-woman"
                 width="441"
                 height="547"
@@ -38,7 +38,7 @@ const UkrainianCulture = () => {
           </div>
           <div className="absolute left-0 top-0 -z-10 max-w-xs sm:max-w-sm md:max-w-md lg:top-8 lg:max-w-2xl xl:w-auto xl:max-w-full 2xl:left-36">
             <Image
-              src="/images/flowers-4.png"
+              src="/images/flowers-4.webp"
               alt="flowers"
               width="885"
               height="882"

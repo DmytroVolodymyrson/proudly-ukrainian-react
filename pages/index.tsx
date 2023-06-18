@@ -20,7 +20,7 @@ const Home = () => {
         />
       </Head>
 
-      <section className="relative flex h-screen">
+      <section className="relative flex h-[100dvh]">
         <div className="container m-auto flex flex-col items-center gap-5">
           <h1 className="font-namu-title text-7xl text-primary xs:text-8xl md:text-[150px] md:leading-tight lg:text-[220px]">
             {t("ukraine")}
@@ -33,7 +33,7 @@ const Home = () => {
           priority={true}
           alt="wheat"
           fill={true}
-          src="/images/wheat.jpg"
+          src="/images/wheat.webp"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       </section>
@@ -98,7 +98,7 @@ const Home = () => {
               <div className="absolute bottom-0 w-52 sm:w-64 md:w-96 lg:w-auto">
                 <Image
                   alt="shevchenko"
-                  src="/images/taras-group.png"
+                  src="/images/taras-group.webp"
                   width="594"
                   height="537"
                 />
@@ -114,7 +114,7 @@ const Home = () => {
             </div>
             <Image
               alt="tree"
-              src="/images/tree.png"
+              src="/images/tree.webp"
               className="absolute -right-24 -top-[22.34%] z-10 w-52 -rotate-[39.15deg] sm:w-64 lg:-right-36 lg:w-auto"
               width="425"
               height="627"
@@ -165,7 +165,7 @@ const Home = () => {
           </div>
           <div className="absolute -right-36 bottom-20 top-0 w-40 sm:-right-8 sm:-top-10 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:ml-auto xl:w-auto 2xl:right-0 2xl:ml-0">
             <Image
-              src="/images/fight-and-overcome.jpg"
+              src="/images/fight-and-overcome.webp"
               alt="fight-and-overcome"
               width="428"
               height="535"
@@ -177,7 +177,7 @@ const Home = () => {
         <div className="container relative flex items-start gap-10 lg:gap-16">
           <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
             <Image
-              src="/images/black-ukraine.png"
+              src="/images/black-ukraine.webp"
               width="489"
               height="687"
               alt="black-ukraine"
@@ -192,7 +192,7 @@ const Home = () => {
 
               <div className="red-square  -bottom-8 -left-[16%] -top-[6%] -z-10 aspect-[901/938] xs:-bottom-12 xs:-top-[10%] sm:-top-[14%] sm:aspect-[901/760] md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
                 <Image
-                  src="/images/poppy-flowers.png"
+                  src="/images/poppy-flowers.webp"
                   alt="poppy-flowers"
                   className="h-full w-full object-cover"
                   width="901"
@@ -249,13 +249,13 @@ const Home = () => {
                 <Image
                   alt="simonenko"
                   className="relative z-10"
-                  src="/images/simonenko.png"
+                  src="/images/simonenko.webp"
                   width="690"
                   height="505"
                 />
                 <div className="absolute -left-[48.69%] -top-[17.42%] w-[116%] max-w-fit">
                   <Image
-                    src="/images/ukraine-map.png"
+                    src="/images/ukraine-map.webp"
                     alt="ukraine-map"
                     width="801"
                     height="534"

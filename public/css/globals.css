@@ -8,6 +8,7 @@
     src: url('../fonts/NAMU-1910.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -15,18 +16,21 @@
     src: url('../fonts/NAMU-1960.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Orienta';
     src: url('../fonts/Orienta-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Cassandra';
     src: url('../fonts/Cassandra.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @layer base {
@@ -36,6 +40,10 @@
 
     body{
         @apply bg-background text-secondary min-h-screen flex ;
+    }
+
+    body:has(.menu-open){
+        overflow: hidden;
     }
 
     body > div{

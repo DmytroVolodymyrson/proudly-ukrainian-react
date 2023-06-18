@@ -45,9 +45,9 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
         </div>
         <div
           className={classNames(
-            "fixed top-0 flex h-screen w-full grow flex-col items-center gap-4 overflow-auto bg-background p-4 text-secondary  transition-all duration-300 md:static md:h-auto md:w-auto md:flex-row md:items-end md:justify-between md:bg-transparent md:p-0 ",
+            "fixed inset-0  flex  w-full grow flex-col items-center gap-4 overflow-auto bg-background p-4 text-secondary  transition-all duration-300 md:static md:h-auto md:w-auto md:flex-row md:items-end md:justify-between md:bg-transparent md:p-0 ",
             {
-              "left-0": isMenuShown,
+              "menu-open left-0": isMenuShown,
               "left-full": !isMenuShown,
               "md:text-background": isWhite,
             }

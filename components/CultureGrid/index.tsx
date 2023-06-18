@@ -12,11 +12,14 @@ export default function CultureGrid() {
         return (
           <div
             key={part.title}
-            className={classNames("group relative h-full text-background ", {
-              "row-span-4": index === 1,
-              "row-span-2": index === 5,
-              "row-span-3": index !== 5 && index !== 1,
-            })}
+            className={classNames(
+              "group relative h-full rounded text-background",
+              {
+                "row-span-4": index === 1,
+                "row-span-2": index === 5,
+                "row-span-3": index !== 5 && index !== 1,
+              }
+            )}
           >
             <div className="absolute inset-0 -z-10">
               <Image
