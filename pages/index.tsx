@@ -252,6 +252,7 @@ const Home = () => {
                   src="/images/simonenko.webp"
                   width="690"
                   height="505"
+                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 384px, 690px"
                 />
                 <div className="absolute -left-[48.69%] -top-[17.42%] w-[116%] max-w-fit">
                   <Image
