@@ -35,6 +35,7 @@ const Home = () => {
           fill={true}
           src="/images/wheat.webp"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
+          sizes="100vw"
         />
       </section>
       <section className="relative pb-28 pt-24 sm:py-28 md:py-36 lg:pb-[213px] lg:pt-[237px]">
@@ -101,6 +102,7 @@ const Home = () => {
                   src="/images/taras-group.webp"
                   width="594"
                   height="537"
+                  sizes="(max-width: 640px) 208px, (max-width: 768px) 256px, (max-width: 1024px) 384px, 594px"
                 />
               </div>
 
@@ -118,6 +120,7 @@ const Home = () => {
               className="absolute -right-24 -top-[22.34%] z-10 w-52 -rotate-[39.15deg] sm:w-64 lg:-right-36 lg:w-auto"
               width="425"
               height="627"
+              sizes="(max-width: 640px) 208px, (max-width: 1024px) 256px, 425px"
             />
           </div>
         </div>
@@ -169,6 +172,7 @@ const Home = () => {
               alt="fight-and-overcome"
               width="428"
               height="535"
+              sizes="(max-width: 768px) 160px, (max-width: 1024px) 208px, (max-width: 1280px) 256px, 428px"
             />
           </div>
         </div>
@@ -181,6 +185,7 @@ const Home = () => {
               width="489"
               height="687"
               alt="black-ukraine"
+              sizes="(max-width: 768px) 150px, (max-width: 1024px) 230px, (max-width: 1280px) 300px, 489px"
             />
           </div>
           <div className="relative -mt-11 flex shrink flex-col gap-8 lg:gap-14">
@@ -197,6 +202,7 @@ const Home = () => {
                   className="h-full w-full object-cover"
                   width="901"
                   height="938"
+                  sizes="(max-width: 640px) 458px, (max-width: 1024px) 602px, (max-width: 1280px) 812px, 901px"
                 />
               </div>
             </div>
@@ -260,6 +266,7 @@ const Home = () => {
                     alt="ukraine-map"
                     width="801"
                     height="534"
+                    sizes="(max-width: 640px) 241px, (max-width: 1024px) 445px, (max-width: 1280px) 668px, 801px"
                   />
                 </div>
 

@@ -91,6 +91,7 @@ export default function MoviesTabs({ className }: Properties) {
                             alt={image}
                             width="249"
                             height="249"
+                            sizes="(max-width: 640px) 173px, (max-width: 768px) 203px, (max-width: 1280px) 230px, 249px"
                           />
                         </SwiperSlide>
                       );
