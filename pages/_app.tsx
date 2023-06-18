@@ -7,13 +7,6 @@ const MyApp = ({ Component, pageProps }: any) => (
   <>
     <Head>
       <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
-      <link
-        rel="preload"
-        href="/fonts/NAMU-1910.woff2"
-        as="font"
-        type="font/woff2"
-        crossOrigin={"anonymous"}
-      />
     </Head>
     <Layout>
       <Component {...pageProps} />

@@ -24,13 +24,12 @@ const HelpUkraine = () => {
               <span className="relative text-background ">
                 <span className="relative z-10">{t("organizations")}</span>
                 <span className="absolute -inset-x-1.5 -bottom-1 -top-20 bg-secondary-darker xs:-inset-x-3 xs:-bottom-3 sm:-bottom-4 lg:-inset-x-4 lg:-top-32 xl:-inset-x-6 xl:-bottom-8  xl:-top-40">
-                  <span className="absolute bottom-0 left-0 w-[43.61%] opacity-30">
+                  <span className="absolute bottom-0 left-0 max-h-full w-[43.61%] overflow-hidden opacity-30">
                     <Image
                       src="/images/flowers-2.webp"
                       alt="flowers"
                       width="345"
                       height="328"
-                      className="h-full w-full object-contain"
                       sizes="(max-width: 380px) 109px, (max-width: 640px) 149px, (max-width: 1024px) 184px, (max-width: 1280px) 290px, 345px"
                     />
                   </span>
@@ -74,7 +73,7 @@ const HelpUkraine = () => {
   );
 };
 
-export async function getServerSideProps({ locale }: { locale: string }) {
+export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "organizations"])),
