@@ -33,9 +33,9 @@ const Home = () => {
           priority={true}
           alt="wheat"
           fill={true}
+          loading={"eager"}
           src="/images/wheat.webp"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
-          sizes="100vw"
         />
       </section>
       <section className="relative pb-28 pt-24 sm:py-28 md:py-36 lg:pb-[213px] lg:pt-[237px]">

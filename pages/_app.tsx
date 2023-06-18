@@ -9,7 +9,7 @@ const MyApp = ({ Component, pageProps }: any) => (
       <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
       <link
         rel="preload"
-        href="../public/fonts/NAMU-1910.woff2"
+        href="/fonts/NAMU-1910.woff2"
         as="font"
         type="font/woff2"
         crossOrigin={"anonymous"}
