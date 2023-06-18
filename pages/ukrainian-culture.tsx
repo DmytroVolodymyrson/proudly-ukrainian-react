@@ -32,6 +32,7 @@ const UkrainianCulture = () => {
                 alt="ukrainian-woman"
                 width="441"
                 height="547"
+                sizes="(max-width: 1024px) 208px, (max-width: 1280px) 320px, 441px"
               />
             </div>
             <span className="red-square bottom-0 right-20 -z-10 aspect-[833/534] w-96 sm:right-32 lg:w-[700px] xl:w-[833px]"></span>
@@ -42,6 +43,7 @@ const UkrainianCulture = () => {
               alt="flowers"
               width="885"
               height="882"
+              sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 448px, (max-width: 1280px) 672px, 885px"
             />
           </div>
         </div>

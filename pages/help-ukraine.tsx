@@ -30,6 +30,8 @@ const HelpUkraine = () => {
                       alt="flowers"
                       width="345"
                       height="328"
+                      className="h-full w-full object-contain"
+                      sizes="(max-width: 380px) 109px, (max-width: 640px) 149px, (max-width: 1024px) 184px, (max-width: 1280px) 290px, 345px"
                     />
                   </span>
                   <span className="red-square -left-6 -top-6 -z-10 aspect-[602/385] w-[76%] sm:-left-8 sm:-top-8 lg:-left-10 lg:-top-10 xl:-left-20 xl:-top-20"></span>
@@ -48,6 +50,7 @@ const HelpUkraine = () => {
                 src="/images/flowers-3.webp"
                 width="430"
                 height="542"
+                sizes="(max-width: 380px) 107px, (max-width: 640px) 139px, (max-width: 768px) 209px, (max-width: 1024px) 254px, (max-width: 1280px) 342px, 430px"
               />
             </span>
           </h2>

@@ -28,6 +28,7 @@ export default function CultureGrid() {
                 height="260"
                 width="410"
                 className="h-full w-full object-cover"
+                sizes="(max-width: 380px) 100vw, (max-width: 1280px) 324px, 410px"
               />
             </div>
             <div className="relative z-20 flex h-full items-center justify-center bg-black/60 p-4 font-namu-body text-base opacity-0 transition-opacity group-hover:opacity-100 md:p-9">

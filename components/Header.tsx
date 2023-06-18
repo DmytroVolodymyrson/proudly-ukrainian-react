@@ -24,6 +24,10 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
     setIsMenuShown(!isMenuShown);
   }
 
+  function handleMenuLinkClick() {
+    setIsMenuShown(false);
+  }
+
   return (
     <header
       className={classNames("z-50 w-full py-3", {
@@ -33,7 +37,10 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
     >
       <div className="container flex items-end justify-between gap-4">
         <div className="flex grow">
-          <Link href="/" className="max-w-28 mr-auto flex md:w-16 lg:w-auto">
+          <Link
+            href="/"
+            className="max-w-28 mr-auto flex h-16 md:h-10 md:w-16 lg:h-16 lg:w-auto"
+          >
             <Image
               src={logoPath}
               alt="logo"
@@ -56,22 +63,38 @@ export default function Header({ isWhite, positionAbsolute }: Properties) {
           <nav className="flex grow flex-col justify-center md:block">
             <ul className="flex flex-col gap-8 text-center font-namu-body text-sm md:flex-row lg:gap-14 lg:text-base">
               <li>
-                <Link href="/help-ukraine" className="link-animate">
+                <Link
+                  href="/help-ukraine"
+                  onClick={handleMenuLinkClick}
+                  className="link-animate"
+                >
                   {t("helpUkraine")}
                 </Link>
               </li>
               <li>
-                <Link href="/ukrainian-culture" className="link-animate">
+                <Link
+                  href="/ukrainian-culture"
+                  onClick={handleMenuLinkClick}
+                  className="link-animate"
+                >
                   {t("culture")}
                 </Link>
               </li>
               <li>
-                <Link href="/ukrainian-history" className="link-animate">
+                <Link
+                  href="/ukrainian-history"
+                  onClick={handleMenuLinkClick}
+                  className="link-animate"
+                >
                   {t("history")}
                 </Link>
               </li>
               <li>
-                <Link href="/contacts" className="link-animate">
+                <Link
+                  href="/contacts"
+                  onClick={handleMenuLinkClick}
+                  className="link-animate"
+                >
                   {t("contacts")}
                 </Link>
               </li>

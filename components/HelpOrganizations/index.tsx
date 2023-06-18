@@ -31,13 +31,14 @@ export default function HelpOrganizations({ className }: Properties) {
                     {organization.link}
                   </a>
                 </div>
-                <div className="h-32 lg:h-auto">
+                <div className="flex h-32 items-center justify-center lg:h-auto">
                   <Image
                     src={`/images/organizations/${organization.image}`}
                     alt="logo"
                     width="286"
                     height="194"
                     className="h-full w-full object-contain xl:h-auto xl:w-72 2xl:w-96"
+                    sizes="(max-width: 768px) 189px, (max-width: 1024px) 256px, 286px"
                   />
                 </div>
               </div>

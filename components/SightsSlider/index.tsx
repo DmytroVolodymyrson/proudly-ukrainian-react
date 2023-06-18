@@ -48,6 +48,7 @@ export default function SightsSlider() {
                     width="504"
                     height="336"
                     className="w-full"
+                    sizes="(max-width: 640px) 174px, (max-width: 768px) 304px, (max-width: 1024px) 297px, (max-width: 1280px) 400px, 504px"
                   />
                   <span className="red-square -inset-y-2 right-[56.74%] -z-10 w-[92.6%] md:-inset-y-4 md:w-[113.6%]"></span>
                 </div>
