@@ -4,6 +4,7 @@ import IconArrowRight from "~icons/pu/arrow-right";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { type Swiper as SwiperCore } from "swiper/types";
 import { useRef } from "react";
 import { Navigation, EffectFade } from "swiper";
 import sights from "./sights.json";
@@ -16,6 +17,16 @@ export default function SightsSlider() {
   const previousButtonReference = useRef(null);
   const nextButtonReference = useRef(null);
 
+  const onBeforeInit = (Swiper: SwiperCore): void => {
+    if (typeof Swiper.params.navigation !== "boolean") {
+      const { navigation } = Swiper.params;
+      if (navigation !== undefined) {
+        navigation.prevEl = previousButtonReference.current;
+        navigation.nextEl = nextButtonReference.current;
+      }
+    }
+  };
+
   return (
     <Swiper
       modules={[Navigation, EffectFade]}
@@ -27,6 +38,7 @@ export default function SightsSlider() {
       className="relative"
       effect="fade"
       autoHeight={true}
+      onBeforeInit={onBeforeInit}
     >
       {sights.map((sight) => {
         return (
