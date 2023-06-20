@@ -138,7 +138,7 @@ const Home = () => {
       </section>
       <section className="mt-20 sm:mt-28 md:mt-20 xl:mt-36">
         <div className="container relative flex items-end gap-32">
-          <div className="flex flex-col gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10 2xl:max-w-[950px]">
+          <div className="flex flex-col gap-[305px] sm:gap-6 md:w-3/4 lg:max-w-[700px] lg:gap-10 2xl:max-w-[950px]">
             <h2 className="relative flex w-5/6 flex-col items-start  leading-tight  sm:w-3/4 md:w-4/5 lg:w-auto">
               <div className="relative inline text-primary">
                 {t("history")}
@@ -155,7 +155,7 @@ const Home = () => {
                 {t("ofUkraine")}
               </span>
 
-              <span className="red-square left-44 top-1/2 -z-10 aspect-[833/534] w-[460px] sm:top-20 md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
+              <span className="red-square left-20 top-[53%] -z-10 aspect-[833/534] w-[360px] sm:left-44 sm:top-20 sm:w-[460px] md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
             </h2>
             <div className="flex flex-col gap-8 lg:gap-14">
               <div className="body-text-namu ">
@@ -166,36 +166,37 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="absolute -right-36 bottom-20 top-0 w-40 sm:-right-8 sm:-top-10 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:ml-auto xl:w-auto 2xl:right-0 2xl:ml-0">
+          <div className="absolute left-4 top-36 w-52 sm:-right-8 sm:-top-10 sm:left-auto sm:w-40 md:bottom-20 md:top-auto md:w-52 lg:right-0 lg:w-64 xl:relative xl:-bottom-0.5 xl:-right-24 xl:ml-auto xl:w-auto 2xl:right-0 2xl:ml-0">
             <Image
               src="/images/fight-and-overcome.webp"
               alt="fight-and-overcome"
               width="428"
               height="535"
-              sizes="(max-width: 768px) 160px, (max-width: 1024px) 208px, (max-width: 1280px) 256px, 428px"
+              sizes="(max-width: 768px) 208px, (max-width: 1024px) 208px, (max-width: 1280px) 256px, 428px"
             />
           </div>
         </div>
       </section>
       <section className="mt-40 sm:mt-52 md:mt-48 lg:mt-52 xl:mt-80">
         <div className="container relative flex items-start gap-10 lg:gap-16">
-          <div className="absolute -left-44 -top-16 z-10 w-40 grow rounded sm:relative sm:inset-0 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
+          <div className="absolute right-8 top-9 z-10 w-48 grow rounded sm:relative sm:inset-0  sm:-top-16 sm:min-w-[150px] md:min-w-[230px] lg:min-w-[300px] xl:min-w-fit ">
             <Image
               src="/images/black-ukraine.webp"
               width="489"
               height="687"
               alt="black-ukraine"
-              sizes="(max-width: 768px) 150px, (max-width: 1024px) 230px, (max-width: 1280px) 300px, 489px"
+              sizes="(max-width: 768px) 192px, (max-width: 1024px) 230px, (max-width: 1280px) 300px, 489px"
             />
           </div>
+
           <div className="relative -mt-11 flex shrink flex-col gap-8 lg:gap-14">
-            <div className="flex flex-col gap-6 md:relative lg:gap-10">
+            <div className="flex flex-col gap-80 sm:gap-6 md:relative lg:gap-10">
               <h2 className="stroke-text">{t("culture")}</h2>
               <div className="body-text-namu">
                 <p>{t("cultureSectionDescription")}</p>
               </div>
 
-              <div className="red-square  -bottom-8 -left-[16%] -top-[6%] -z-10 aspect-[901/938] xs:-bottom-12 xs:-top-[10%] sm:-top-[14%] sm:aspect-[901/760] md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
+              <div className="red-square -left-[16%] -top-[6%] -z-10 aspect-[901/938] w-full sm:-bottom-12  sm:-top-[14%] sm:aspect-[901/760] sm:w-auto md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
                 <Image
                   src="/images/poppy-flowers.webp"
                   alt="poppy-flowers"
@@ -218,7 +219,7 @@ const Home = () => {
           <MoviesTabs className="mt-6 lg:mt-11" />
         </div>
       </section>
-      <section className="relative mt-16 pb-20 pt-20 sm:mt-20 sm:pt-20  md:mt-24 md:pt-28 lg:mt-32 lg:pb-44 lg:pt-48 xl:mt-44 xl:pt-[246px]">
+      <section className="relative mt-16 pb-32 pt-14 sm:mt-20 sm:pb-20 sm:pt-20  md:mt-24 md:pt-28 lg:mt-32 lg:pb-44 lg:pt-48 xl:mt-44 xl:pt-[246px]">
         <svg
           width="0"
           height="0"
@@ -251,7 +252,7 @@ const Home = () => {
                 height="483"
                 className="absolute -left-[509px] -top-12 max-w-fit md:-top-8 lg:top-8 xl:top-16"
               />
-              <div className="absolute -right-10 bottom-2.5 w-[130px] max-w-xs xs:-right-16 xs:w-52 sm:w-auto md:-right-32 md:max-w-sm lg:-right-44 lg:max-w-xl xl:max-w-fit 2xl:right-0">
+              <div className="absolute -right-10 bottom-2.5 w-[180px]  max-w-xs xs:-right-16  sm:w-auto md:-right-32 md:max-w-sm lg:-right-44 lg:max-w-xl xl:max-w-fit 2xl:right-0">
                 <Image
                   alt="simonenko"
                   className="relative z-10"
@@ -277,8 +278,8 @@ const Home = () => {
         </div>
 
         <div className="container pl-8 pr-2 sm:px-16">
-          <div className="relative max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-xl">
-            <div className="gap quote-text flex flex-col gap-3 sm:gap-5 md:gap-10 xl:gap-12">
+          <div className="relative max-w-xs  sm:max-w-sm lg:max-w-md xl:max-w-xl">
+            <div className="gap quote-text flex flex-col gap-3 max-sm:text-[20px] max-sm:leading-[25px] sm:gap-5 md:gap-10 xl:gap-12">
               <div>
                 <p>“{t("simonenkoQuotePart1")}</p>
                 <p>{t("simonenkoQuotePart2")}</p>
