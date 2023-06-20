@@ -1,8 +1,9 @@
-export default function Loading(properties: any) {
+import classNames from "classnames";
+
+export default function Loading({ className }: { className: string }) {
   return (
     <svg
-      {...properties}
-      className="animate-spin"
+      className={classNames("animate-spin", className)}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
