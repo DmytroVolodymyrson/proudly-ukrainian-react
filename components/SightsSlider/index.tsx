@@ -21,8 +21,8 @@ export default function SightsSlider() {
       modules={[Navigation, EffectFade]}
       spaceBetween={50}
       navigation={{
-        prevEl: previousButtonReference.current,
-        nextEl: nextButtonReference.current,
+        prevEl: previousButtonReference.current!,
+        nextEl: nextButtonReference.current!,
       }}
       className="relative"
       effect="fade"
