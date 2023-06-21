@@ -3,6 +3,7 @@ import IconLinkedin from "~icons/mdi/linkedin";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
+import Head from "next/head";
 import ContactSection from "../components/ContactSection";
 
 const HelpUkraine = () => {
@@ -10,6 +11,20 @@ const HelpUkraine = () => {
 
   return (
     <>
+      <Head>
+        <title>{t("contactsMetaTitle")}</title>
+        <meta name="description" content={`${t("contactsMetaDescription")}`} />
+        <meta property="og:title" content={`${t("contactsMetaTitle")}`} />
+        <meta
+          property="og:description"
+          content={`${t("contactsMetaDescription")}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.proudlyukrainian.com/images/flowers.svg"
+        />
+      </Head>
+
       <section className="mt-14 sm:mt-20 lg:mt-32">
         <div className="container">
           <ContactSection />

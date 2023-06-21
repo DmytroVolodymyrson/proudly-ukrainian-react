@@ -10,10 +10,19 @@ const HelpUkraine = () => {
   return (
     <>
       <Head>
-        <title>Help Ukraine</title>
+        <title>{t("helpUkraineMetaTitle")}</title>
         <meta
           name="description"
-          content="Explore organizations helping Ukraine, support military personnel and civilians affected by the conflict. Make a difference today."
+          content={`${t("helpUkraineMetaDescription")}`}
+        />
+        <meta property="og:title" content={`${t("helpUkraineMetaTitle")}`} />
+        <meta
+          property="og:description"
+          content={`${t("helpUkraineMetaDescription")}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.proudlyukrainian.com/images/organizations/come-back-alive.webp"
         />
       </Head>
 
@@ -26,6 +35,7 @@ const HelpUkraine = () => {
                 <span className="absolute -inset-x-1.5 -bottom-1 -top-20 bg-secondary-darker xs:-inset-x-3 xs:-bottom-3 sm:-bottom-4 lg:-inset-x-4 lg:-top-32 xl:-inset-x-6 xl:-bottom-8  xl:-top-40">
                   <span className="absolute bottom-0 left-0 max-h-full w-[43.61%] overflow-hidden opacity-30">
                     <Image
+                      priority={true}
                       src="/images/flowers-2.webp"
                       alt="flowers"
                       width="345"
@@ -45,6 +55,7 @@ const HelpUkraine = () => {
 
             <span className="absolute -bottom-4 right-0 -z-10 w-2/5 rotate-[-47.23deg] sm:-right-12 sm:-top-40 sm:bottom-0 sm:w-[34.45%] lg:-right-36 lg:-top-52">
               <Image
+                priority={true}
                 alt="flowers"
                 src="/images/flowers-3.webp"
                 width="430"

@@ -1,6 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import Head from "next/head";
 import HistoryTimeline from "../components/HistoryTimeline";
 
 const UkrainianHistory = () => {
@@ -8,6 +9,25 @@ const UkrainianHistory = () => {
 
   return (
     <>
+      <Head>
+        <title>{t("ukrainianHistoryMetaTitle")}</title>
+        <meta
+          name="description"
+          content={`${t("ukrainianHistoryMetaDescription")}`}
+        />
+        <meta
+          property="og:title"
+          content={`${t("ukrainianHistoryMetaTitle")}`}
+        />
+        <meta
+          property="og:description"
+          content={`${t("ukrainianHistoryMetaDescription")}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.proudlyukrainian.com/images/bohdan-in-stone.webp"
+        />
+      </Head>
       <section className="mt-12 md:mt-20 lg:mt-28 xl:mt-40">
         <div className="container relative flex flex-col ">
           <h1 className="main-title">{t("historyTitle")}</h1>
@@ -16,6 +36,7 @@ const UkrainianHistory = () => {
           </div>
           <div className="relative ml-auto w-64  max-w-xs sm:absolute sm:-right-36 sm:-top-12 sm:w-auto md:-right-24 md:-top-24 md:max-w-sm lg:-right-60 lg:-top-40 lg:max-w-xl xl:-right-20 xl:-top-44 xl:max-w-full">
             <Image
+              priority={true}
               src="/images/bohdan-in-stone.webp"
               alt="bohdan khmelnitsky"
               width="740"

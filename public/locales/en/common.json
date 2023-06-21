@@ -1,5 +1,7 @@
 {
   "contacts": "Contacts",
+  "contactsMetaDescription": "Connect with design and development contributors.",
+  "contactsMetaTitle": "Contacts Proudly Ukrainian",
   "culture": "Culture",
   "cultureDescription": "Ukrainian culture is a culture that reflects the national identity, traditions, and values of Ukrainians. It has a rich historical experience and roots preserved in the culture and art created by Ukrainian creators.",
   "cultureSectionDescription": "Ukraine's culture is multifaceted and has deep historical roots that encompass the traditions of folk art, literature, music, theater, cinema, architecture, national holidays and religious customs. Ukraine's contemporary culture is actively developing and is part of the global cultural space through active participation in international cultural projects and strengthening cultural ties with other countries.",
@@ -14,6 +16,8 @@
   "haveQuestions": "Do you have any questions?",
   "help": "help",
   "helpUkraine": "Help Ukraine",
+  "helpUkraineMetaDescription": "Explore organizations helping Ukraine, support army and civilians affected by the conflict. Make a difference today.",
+  "helpUkraineMetaTitle": "Help Ukraine",
   "history": "History",
   "historyDescription": "Ukraine is a country with a rich history and culture that continues to develop and seek its place in the world. This country has a lot of potential and can become one of the most advanced and successful countries in the world. The Ukrainian people maintain their national consciousness and desire to live freely, which makes them strong and unbreakable.",
   "historyTitle": "History",
@@ -24,6 +28,8 @@
   "ofUkraine": "of Ukraine",
   "organizations": "Organizations",
   "ourCountryDeservesWin": "Our country deserves to win this war, and we are confident that together we can do everything possible to help our country, which is in such great need of our help right now.",
+  "proudlyUkrainianMetaDescription": "Discover Ukraine’s rich history and diverse culture.",
+  "proudlyUkrainianMetaTitle": "Proudly Ukrainian",
   "seeMore": "See more",
   "simonenkoName": "Vasyl Symonenko",
   "simonenkoQuotePart1": "Ukraine! You are truly a marvel!",
@@ -36,7 +42,11 @@
   "thankYouForYourMessage": "Thanks for your message!",
   "ukraine": "Ukraine",
   "ukraineHistorySectionDescription": "Ukraine is located in Eastern Europe and covers an area of over 600,000 square kilometers. It has a diverse natural landscape consisting of plains, mountains, forests, rivers and lakes. The Carpathian Mountains are located in the western part of the country, while the Crimean Mountains are in the south. The largest river flowing through Ukraine is the Dnipro. In addition, the country has several major cities, such as Kyiv, Kharkiv, Odesa, Dnipro, and Lviv, which are of great cultural and economic importance to Ukraine.",
+  "ukrainianCultureMetaDescription": "Explore the rich traditions and iconic sights of Ukrainian culture.",
+  "ukrainianCultureMetaTitle": "Ukrainian Culture",
   "ukrainianHashtags": "#free#brave#independent",
+  "ukrainianHistoryMetaDescription": "Journey through Ukrainian history and uncover key events and figures.",
+  "ukrainianHistoryMetaTitle": "Ukrainian History",
   "youCanWriteUs": "Here you can write the question that bothers you.",
   "yourMessage": "Your message"
 }

@@ -11,10 +11,22 @@ const UkrainianCulture = () => {
   return (
     <>
       <Head>
-        <title>Ukrainian Culture</title>
+        <title>{t("ukrainianCultureMetaTitle")}</title>
         <meta
           name="description"
-          content="This is an example page with a meta description."
+          content={`${t("ukrainianCultureMetaDescription")}`}
+        />
+        <meta
+          property="og:title"
+          content={`${t("ukrainianCultureMetaTitle")}`}
+        />
+        <meta
+          property="og:description"
+          content={`${t("ukrainianCultureMetaDescription")}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.proudlyukrainian.com/images/ukrainian-woman.webp"
         />
       </Head>
 
@@ -28,6 +40,7 @@ const UkrainianCulture = () => {
           <div className="relative bottom-0 right-0 flex justify-end  sm:absolute ">
             <div className="w-40 sm:w-52 lg:w-80 xl:w-fit">
               <Image
+                priority={true}
                 src="/images/ukrainian-woman.webp"
                 alt="ukrainian-woman"
                 width="441"
@@ -39,6 +52,7 @@ const UkrainianCulture = () => {
           </div>
           <div className="absolute left-0 top-0 -z-10 max-w-xs sm:max-w-sm md:max-w-md lg:top-8 lg:max-w-2xl xl:w-auto xl:max-w-full 2xl:left-36">
             <Image
+              priority={true}
               src="/images/flowers-4.webp"
               alt="flowers"
               width="885"

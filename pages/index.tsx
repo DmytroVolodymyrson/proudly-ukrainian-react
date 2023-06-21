@@ -12,11 +12,24 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Proudly Ukrainian</title>
+        <title>{t("proudlyUkrainianMetaTitle")}</title>
         <meta
           name="description"
-          content="Discover Ukraine’s rich history and diverse culture."
+          content={`${t("proudlyUkrainianMetaDescription")}`}
         />
+        <meta
+          property="og:title"
+          content={`${t("proudlyUkrainianMetaTitle")}`}
+        />
+        <meta
+          property="og:description"
+          content={`${t("proudlyUkrainianMetaDescription")}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.proudlyukrainian.com/images/ukraine-preview.jpg"
+        />
+        <meta property="og:url" content="https://www.proudlyukrainian.com/" />
       </Head>
 
       <section className="relative flex h-[100dvh]">

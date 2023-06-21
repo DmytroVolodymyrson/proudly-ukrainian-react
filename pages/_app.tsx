@@ -7,6 +7,10 @@ const MyApp = ({ Component, pageProps }: any) => (
   <>
     <Head>
       <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      />
     </Head>
     <Layout>
       <Component {...pageProps} />
