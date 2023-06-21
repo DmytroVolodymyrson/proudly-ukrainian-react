@@ -47,7 +47,7 @@
     }
 
     body > div{
-        @apply w-full overflow-hidden flex flex-col
+        @apply w-full overflow-hidden xs:grid grid-rows-[auto_1fr_auto]
     }
 
     h2 {

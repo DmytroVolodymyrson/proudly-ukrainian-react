@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <>
       <Header positionAbsolute={isHome} isWhite={isHome} />
-      <main>{children}</main>
+      <main className="self-start">{children}</main>
       <Footer />
     </>
   );

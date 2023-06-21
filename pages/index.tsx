@@ -4,8 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
 import MoviesTabs from "../components/MoviesTabs";
-import ContactForm from "../components/ContactForm";
-import ContactEmail from "../components/ContactEmail";
+import ContactSection from "../components/ContactSection";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -213,7 +212,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-28 sm:mt-32 md:mt-48 lg:mt-72 xl:mt-[340px] 2xl:mt-40">
+      <section className="mt-20 sm:mt-32 md:mt-48 lg:mt-72 xl:mt-[340px] 2xl:mt-40">
         <div className="container">
           <h3>{t("legendaryUkrainianMovies")}</h3>
           <MoviesTabs className="mt-6 lg:mt-11" />
@@ -294,25 +293,8 @@ const Home = () => {
         </div>
       </section>
       <section className="mt-16 sm:mt-20 md:mt-28 lg:mt-36">
-        <div className="container flex flex-col justify-between gap-10 sm:flex-row">
-          <div className="font-namu-body">
-            <span className="text-base opacity-50">{t("haveQuestions")}</span>
-            <div className="mt-1 max-w-sm text-xl md:text-2xl">
-              {t("youCanWriteUs")}
-            </div>
-            <div className="mt-5 max-w-xs lg:max-w-fit">
-              <Image
-                src="/images/flowers.svg"
-                alt="flowers"
-                width="472"
-                height="180"
-              />
-            </div>
-            <ContactEmail className="mt-5" />
-          </div>
-          <div className="md:w-[44%] ">
-            <ContactForm />
-          </div>
+        <div className="container">
+          <ContactSection />
         </div>
       </section>
     </>

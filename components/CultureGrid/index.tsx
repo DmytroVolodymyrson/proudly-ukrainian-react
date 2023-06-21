@@ -36,7 +36,7 @@ export default function CultureGrid() {
             </div>
             <div className="absolute inset-0 z-10 flex items-center justify-center p-4 text-center transition-opacity group-hover:opacity-0">
               <h4>[&nbsp;{t(part.title)}&nbsp;]</h4>
-              <span className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-b from-transparent via-black to-transparent"></span>
+              <span className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-b from-transparent via-black/70 to-transparent md:via-black"></span>
             </div>
           </div>
         );

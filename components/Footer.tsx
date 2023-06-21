@@ -8,7 +8,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="mt-14 justify-self-end bg-secondary-darker py-6 text-background sm:mt-20 sm:py-12 lg:mt-32 lg:py-16">
+    <footer className="mt-14 self-end bg-secondary-darker py-6 text-background sm:mt-20 sm:py-12 lg:mt-32 lg:py-16">
       <div className="container flex flex-col items-center justify-between gap-7 sm:flex-row sm:items-start sm:gap-10">
         <div>
           <Link href="/" className="flex w-28 lg:w-auto">
