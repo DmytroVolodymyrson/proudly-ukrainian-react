@@ -203,7 +203,7 @@ const Home = () => {
                   className="h-full w-full object-cover"
                   width="901"
                   height="938"
-                  sizes="(max-width: 640px) 458px, (max-width: 1024px) 602px, (max-width: 1280px) 812px, 901px"
+                  sizes="(max-width: 640px) 340px, (max-width: 1024px) 602px, (max-width: 1280px) 812px, 901px"
                 />
               </div>
             </div>

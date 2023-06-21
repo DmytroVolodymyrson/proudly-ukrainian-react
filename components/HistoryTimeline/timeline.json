@@ -1,0 +1,33 @@
+[
+  {
+    "title": "ancientNationsTitle",
+    "description": "ancientNationsDescription",
+    "image": {
+      "path": "sarmats-warriors.webp",
+      "description": "ancientNationsImageDescription"
+    }
+  },
+  {
+    "title": "kievanRusTitle",
+    "description": "kievanRusDescription",
+    "image": {
+      "path": "dager.webp",
+      "description": "kievanRusImageDescription"
+    }
+  },
+  {
+    "title": "divisionAndForeignRuleTitle",
+    "description": "divisionAndForeignRuleDescription",
+    "image": {
+      "path": "bogdan-khmelnytsky.webp",
+      "description": "divisionAndForeignRuleImageDescription"
+    }
+  },
+  {
+    "title": "modernHistoryTitle",
+    "description": "modernHistoryDescription",
+    "image": {
+      "path": "glory-to-ukraine.svg"
+    }
+  }
+]
