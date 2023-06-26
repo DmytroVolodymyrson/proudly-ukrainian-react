@@ -46,8 +46,12 @@ const HelpUkraine = () => {
                   <span className="red-square -left-6 -top-6 -z-10 aspect-[602/385] w-[76%] sm:-left-8 sm:-top-8 lg:-left-10 lg:-top-10 xl:-left-20 xl:-top-20"></span>
                 </span>
               </span>
-              <span className="relative z-10"> {t("for")} </span>
-              <span className="relative z-10 sm:hidden"> {t("help")} </span>
+              <div className=" inline gap-2.5 max-[330px]:flex">
+                <span className="relative z-10"> {t("for")} </span>
+                <span className="relative z-10 block text-right xs:inline sm:hidden">
+                  {t("help")}
+                </span>
+              </div>
             </span>
             <div className="relative z-10 hidden sm:mr-40  sm:block sm:text-right  lg:mr-10  2xl:ml-[700px] 2xl:text-left">
               {t("help")}

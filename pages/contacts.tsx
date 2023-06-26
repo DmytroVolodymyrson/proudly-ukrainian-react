@@ -61,7 +61,7 @@ const HelpUkraine = () => {
                   alt="inesa ponberezhba"
                   width="313"
                   height="269"
-                  sizes="(max-width: 640px) 230px, (max-width: 1024px) 176px, (max-width: 1280px) 240px, 313px"
+                  sizes="(max-width: 640px) 300px, (max-width: 1024px) 176px, (max-width: 1280px) 240px, 313px"
                 />
               </div>
               <h3 className="text-primary">{t("dmytro")}</h3>

@@ -144,7 +144,7 @@ const Home = () => {
               <p>{t("tarasName")}</p>
             </div>
 
-            <span className="absolute -right-6 top-24 aspect-[120/110] max-h-[435px] w-5/6 min-w-[240px] max-w-[695px] -translate-y-1/2 border border-primary sm:top-20 sm:aspect-[139/87] sm:w-3/4 sm:min-w-[290px] md:-right-[10.5%] md:top-[61%] md:w-[60%]"></span>
+            <span className=" red-square -right-10 top-24 aspect-[120/110] max-h-[435px] w-5/6 min-w-[240px] max-w-[695px] -translate-y-1/2 sm:-right-6 sm:top-20 sm:aspect-[139/87] sm:w-3/4 sm:min-w-[290px] md:-right-[10.5%] md:top-[61%] md:w-[60%]"></span>
           </div>
         </div>
       </section>
@@ -167,7 +167,7 @@ const Home = () => {
                 {t("ofUkraine")}
               </span>
 
-              <span className="red-square left-20 top-[53%] -z-10 aspect-[833/534] w-[360px] sm:left-44 sm:top-20 sm:w-[460px] md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
+              <span className="red-square left-[100px] top-[53%] -z-10 aspect-[833/534] w-[360px] sm:left-44 sm:top-20 sm:w-[460px] md:w-[525px]  lg:left-72 lg:top-32 lg:w-[90%] xl:top-48 xl:w-[833px]"></span>
             </h2>
             <div className="flex flex-col gap-8 lg:gap-14">
               <div className="body-text-namu ">
@@ -208,14 +208,14 @@ const Home = () => {
                 <p>{t("cultureSectionDescription")}</p>
               </div>
 
-              <div className="red-square -left-[16%] -top-[6%] -z-10 aspect-[901/938] w-full sm:-bottom-12  sm:-top-[14%] sm:aspect-[901/760] sm:w-auto md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
+              <div className="red-square -left-[16%] -top-6 -z-10 aspect-[901/938] w-[88%] xs:-top-[6%] xs:w-full sm:-bottom-12  sm:-top-[14%] sm:aspect-[901/760] sm:w-auto md:w-[129.64%] xl:aspect-[901/938] 2xl:aspect-[901/473]">
                 <Image
                   src="/images/poppy-flowers.webp"
                   alt="poppy-flowers"
                   className="h-full w-full object-cover"
                   width="901"
                   height="938"
-                  sizes="(max-width: 640px) 340px, (max-width: 1024px) 602px, (max-width: 1280px) 812px, 901px"
+                  sizes="(max-width: 380px) 300px, (max-width: 640px) 340px, (max-width: 1024px) 602px, (max-width: 1280px) 812px, 901px"
                 />
               </div>
             </div>
@@ -283,7 +283,7 @@ const Home = () => {
                   />
                 </div>
 
-                <span className="red-square -left-[33.9%] -top-[12.87%] aspect-[757/485] w-[109.7%]"></span>
+                <span className="red-square -left-[27.9%] -top-[12.87%] aspect-[757/485] w-[109.7%] xs:-left-[33.9%]"></span>
               </div>
             </div>
           </div>

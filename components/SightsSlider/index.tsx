@@ -53,16 +53,16 @@ export default function SightsSlider() {
                       return <li key={point}>{point}</li>;
                     })}
                 </ul>
-                <div className="relative w-1/2 md:w-[40.38%]">
+                <div className="relative w-full sm:w-1/2 md:w-[40.38%]">
                   <Image
                     src={`/images/sights/${sight.image}`}
                     alt={t(sight.name)}
                     width="504"
                     height="336"
                     className="w-full"
-                    sizes="(max-width: 640px) 174px, (max-width: 768px) 304px, (max-width: 1024px) 297px, (max-width: 1280px) 400px, 504px"
+                    sizes="(max-width: 640px) 348px, (max-width: 768px) 304px, (max-width: 1024px) 297px, (max-width: 1280px) 400px, 504px"
                   />
-                  <span className="red-square -inset-y-2 right-[56.74%] -z-10 w-[92.6%] md:-inset-y-4 md:w-[113.6%]"></span>
+                  <span className="red-square -inset-y-2 right-[56.74%] -z-10 hidden w-[92.6%] sm:block md:-inset-y-4 md:w-[113.6%]"></span>
                 </div>
               </div>
             </div>
