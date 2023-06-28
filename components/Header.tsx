@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import classNames from "classnames";
-import Menu from "../components/Menu";
+import dynamic from "next/dynamic";
+
+const Menu = dynamic(async () => import("../components/Menu"));
 
 interface Properties {
   isWhite?: boolean;
