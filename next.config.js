@@ -2,7 +2,10 @@
 const {i18n} = require('./next-i18next.config');
 const {FileSystemIconLoader} = require('unplugin-icons/loaders');
 
-module.exports = {
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
+module.exports = withBundleAnalyzer({
 	i18n,
 	reactStrictMode: true,
 	webpack(config) {
@@ -12,7 +15,7 @@ module.exports = {
 				jsx: 'react',
 				customCollections: {
 					// eslint-disable-next-line new-cap
-					pu: FileSystemIconLoader('assets/icons', svg => svg.replace(/^<svg /, '<svg fill="currentColor" ')),
+					pu: FileSystemIconLoader('./assets/icons', svg => svg.replace(/^<svg /, '<svg fill="currentColor" ')),
 				},
 			}),
 		);
@@ -20,4 +23,5 @@ module.exports = {
 		return config;
 	},
 
-};
+});
+

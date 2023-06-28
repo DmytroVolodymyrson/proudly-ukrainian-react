@@ -3,8 +3,12 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
-import MoviesTabs from "../components/MoviesTabs";
-import ContactSection from "../components/ContactSection";
+import dynamic from "next/dynamic";
+
+const MoviesTabs = dynamic(async () => import("../components/MoviesTabs"));
+const ContactSection = dynamic(
+  async () => import("../components/ContactSection")
+);
 
 const Home = () => {
   const { t } = useTranslation();
@@ -32,7 +36,7 @@ const Home = () => {
         <meta property="og:url" content="https://www.proudlyukrainian.com/" />
       </Head>
 
-      <section className="relative flex h-[100dvh]">
+      <section className="relative flex h-[100svh]">
         <div className="container m-auto flex flex-col items-center gap-5">
           <h1 className="font-namu-title text-7xl text-primary xs:text-8xl md:text-[150px] md:leading-tight lg:text-[220px]">
             {t("ukraine")}
